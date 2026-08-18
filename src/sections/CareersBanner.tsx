@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
 import { Modal } from '../components/ui/Modal';
-import { Send, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
+
 
 export const CareersBanner: React.FC = () => {
   const [isCvModalOpen, setIsCvModalOpen] = useState(false);
