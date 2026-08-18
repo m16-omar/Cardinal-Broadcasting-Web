@@ -9,7 +9,7 @@ export const navLinks: NavLink[] = [
   { label: 'Our Portfolio', href: '/portfolio' },
   { label: 'What We Do', href: '/what-we-do' },
   { label: 'Our Impact', href: '/impact' },
-  { label: 'News', href: '/news' },
+  // { label: 'News', href: '/news' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -50,10 +50,11 @@ export const companyDetails = {
       { label: 'Our Portfolio', href: '/portfolio' },
       { label: 'What We Do', href: '/what-we-do' },
       { label: 'Our Impact', href: '/impact' },
-      { label: 'News & Media', href: '/news' },
+      // { label: 'News & Media', href: '/news' },
       { label: 'Careers', href: '/careers' },
       { label: 'Contact', href: '/contact' },
     ],
+
     portfolio: [
       { label: 'City 105.1 FM', href: 'https://city1051fm.com', isExternal: true },
       { label: '93.5 Area FM', href: 'https://935areafm.com', isExternal: true },

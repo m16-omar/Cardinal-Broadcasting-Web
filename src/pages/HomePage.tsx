@@ -9,7 +9,7 @@ import { ApproachSection } from '../sections/ApproachSection';
 import { TalentSection } from '../sections/TalentSection';
 import { EditorialBanner } from '../sections/EditorialBanner';
 import { PartnersCta } from '../sections/PartnersCta';
-import { NewsPreview } from '../sections/NewsPreview';
+// import { NewsPreview } from '../sections/NewsPreview';
 import { CareersBanner } from '../sections/CareersBanner';
 import { FinalCta } from '../sections/FinalCta';
 
@@ -26,9 +26,10 @@ export const HomePage: React.FC = () => {
       <TalentSection />
       <EditorialBanner />
       <PartnersCta />
-      <NewsPreview />
+      {/* <NewsPreview /> */}
       <CareersBanner />
       <FinalCta />
     </>
   );
 };
+
