@@ -96,16 +96,21 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Actions Container */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-2.5 lg:hidden">
             <ThemeToggle />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors focus:outline-none cursor-pointer"
+              className="w-11 h-11 flex items-center justify-center rounded-2xl bg-slate-100 hover:bg-slate-200/80 dark:bg-white/5 hover:dark:bg-white/10 border border-slate-200/90 dark:border-white/10 text-slate-800 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D92039] shadow-xs cursor-pointer"
               aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? (
+                <X className="w-5 h-5" strokeWidth={2.2} />
+              ) : (
+                <Menu className="w-5 h-5" strokeWidth={2.2} />
+              )}
             </button>
           </div>
+
         </div>
       </header>
 
