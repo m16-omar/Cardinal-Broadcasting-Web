@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Sparkles, MapPin, Ticket } from 'lucide-react';
-import { Initiative } from '../../data/initiatives';
+import type { Initiative } from '../../data/initiatives';
+
+
 
 interface InitiativeCardProps {
   initiative: Initiative;
