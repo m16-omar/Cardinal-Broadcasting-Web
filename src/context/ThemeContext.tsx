@@ -9,13 +9,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       if (savedTheme === 'light' || savedTheme === 'dark') {
         return savedTheme;
       }
-      // 2. System preference
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        return 'light';
-      }
     }
-    // 3. Fallback to dark mode (preserving current website aesthetic)
-    return 'dark';
+    // 2. Default to Light Mode
+    return 'light';
   });
 
   useEffect(() => {
