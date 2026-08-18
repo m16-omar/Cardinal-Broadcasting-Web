@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import type { NewsArticle } from '../../data/news';
 
-
 interface NewsCardProps {
   article: NewsArticle;
   index?: number;
@@ -17,7 +16,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({ article, index = 0 }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group flex flex-col justify-between rounded-2xl bg-[#0E1017] border border-white/10 hover:border-[#D92039]/40 overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#9B111E]/10"
+      className="group flex flex-col justify-between rounded-2xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 hover:border-[#D92039]/40 overflow-hidden shadow-sm dark:shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-[#9B111E]/10"
     >
       <div>
         {/* Thumbnail Image */}
@@ -28,9 +27,9 @@ export const NewsCard: React.FC<NewsCardProps> = ({ article, index = 0 }) => {
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0E1017] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 dark:from-[#0E1017] via-transparent to-transparent" />
           <div className="absolute top-4 left-4">
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#08090E]/80 backdrop-blur-md border border-white/15 text-[#D92039] shadow-md">
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-slate-900/85 backdrop-blur-md border border-white/20 text-[#D92039] shadow-md">
               {article.category}
             </span>
           </div>
@@ -49,11 +48,11 @@ export const NewsCard: React.FC<NewsCardProps> = ({ article, index = 0 }) => {
             </span>
           </div>
 
-          <h3 className="text-lg sm:text-xl font-bold text-white leading-snug group-hover:text-[#D92039] transition-colors line-clamp-2">
+          <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white leading-snug group-hover:text-[#D92039] transition-colors line-clamp-2">
             <Link to={`/news/${article.slug}`}>{article.title}</Link>
           </h3>
 
-          <p className="text-sm text-slate-400 leading-relaxed line-clamp-3 font-normal">
+          <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-3 font-normal">
             {article.excerpt}
           </p>
         </div>
@@ -63,7 +62,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({ article, index = 0 }) => {
       <div className="px-6 pb-6 pt-2">
         <Link
           to={`/news/${article.slug}`}
-          className="inline-flex items-center gap-2 text-xs font-semibold text-slate-300 group-hover:text-[#D92039] transition-colors"
+          className="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300 group-hover:text-[#D92039] transition-colors"
         >
           <span>Read Full Article</span>
           <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />

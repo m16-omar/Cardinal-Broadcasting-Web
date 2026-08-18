@@ -12,7 +12,7 @@ export const PartnersCta: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 md:py-32 relative bg-[#0B0D14] border-t border-b border-white/5 overflow-hidden">
+    <section className="py-24 md:py-32 relative bg-slate-50 dark:bg-[#0B0D14] border-t border-b border-slate-200 dark:border-white/5 overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column (6 cols) */}
@@ -43,11 +43,11 @@ export const PartnersCta: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="p-6 rounded-2xl bg-[#0E1017] border border-white/10 hover:border-[#D92039]/30 transition-colors shadow-md"
+                className="p-6 rounded-2xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 hover:border-[#D92039]/40 transition-colors shadow-sm dark:shadow-md"
               >
                 <div className="w-2 h-2 rounded-full bg-[#D92039] mb-3" />
-                <h3 className="text-base font-bold text-white mb-1.5">{item.title}</h3>
-                <p className="text-xs text-slate-400 leading-relaxed font-normal">{item.desc}</p>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1.5">{item.title}</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-normal">{item.desc}</p>
               </motion.div>
             ))}
           </div>

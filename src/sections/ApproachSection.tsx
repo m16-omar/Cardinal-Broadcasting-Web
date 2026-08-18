@@ -21,7 +21,7 @@ export const ApproachSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 md:py-32 relative bg-[#08090E] overflow-hidden">
+    <section className="py-24 md:py-32 relative bg-slate-50 dark:bg-[#08090E] overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Heading & Editorial Perspective (5 cols) */}
@@ -33,11 +33,11 @@ export const ApproachSection: React.FC = () => {
               subtitle="We view media as an instrument of empowerment, cultural expression, and collective progress across African communities."
             />
 
-            <div className="p-6 rounded-2xl bg-[#0E1017] border border-white/10 space-y-3">
-              <span className="text-xs font-mono font-bold text-[#C5A880] uppercase tracking-wider block">
+            <div className="p-6 rounded-2xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 space-y-3 shadow-sm dark:shadow-none">
+              <span className="text-xs font-mono font-bold text-[#9B111E] dark:text-[#C5A880] uppercase tracking-wider block">
                 Editorial Conviction
               </span>
-              <p className="text-sm text-slate-300 italic leading-relaxed">
+              <p className="text-sm text-slate-700 dark:text-slate-300 italic leading-relaxed">
                 "In an era of rapid technological acceleration, true media leadership requires balancing innovative distribution with unyielding human empathy and cultural relevance."
               </p>
             </div>
@@ -52,22 +52,22 @@ export const ApproachSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-7 rounded-2xl bg-[#0E1017] border border-white/10 hover:border-[#D92039]/40 transition-all duration-300 group shadow-lg flex flex-col justify-between"
+                className="p-7 rounded-2xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 hover:border-[#D92039]/40 transition-all duration-300 group shadow-sm dark:shadow-lg flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-10 h-10 rounded-xl bg-[#9B111E]/10 border border-[#9B111E]/30 flex items-center justify-center group-hover:bg-[#9B111E] transition-colors duration-300">
                       {getIcon(principle.iconName)}
                     </div>
-                    <span className="text-xs font-mono font-bold text-slate-500">
+                    <span className="text-xs font-mono font-bold text-slate-400 dark:text-slate-500">
                       {principle.number}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#D92039] transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-[#D92039] transition-colors">
                     {principle.title}
                   </h3>
-                  <p className="text-sm text-slate-400 leading-relaxed font-normal">
+                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
                     {principle.description}
                   </p>
                 </div>
