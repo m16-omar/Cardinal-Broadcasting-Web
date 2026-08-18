@@ -6,7 +6,7 @@ import { Button } from '../components/ui/Button';
 
 export const BrandsSection: React.FC = () => {
   return (
-    <section id="brands" className="py-24 md:py-32 relative bg-[#08090E] overflow-hidden">
+    <section id="brands" className="py-24 md:py-32 relative bg-slate-50 dark:bg-[#08090E] overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
