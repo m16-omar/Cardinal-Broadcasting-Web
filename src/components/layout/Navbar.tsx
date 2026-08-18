@@ -95,22 +95,14 @@ export const Navbar: React.FC = () => {
             </Button>
           </div>
 
-          {/* Mobile Actions Container */}
-          <div className="flex items-center gap-2.5 lg:hidden">
-            <ThemeToggle />
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="w-11 h-11 flex items-center justify-center rounded-2xl bg-slate-100 hover:bg-slate-200/80 dark:bg-white/5 hover:dark:bg-white/10 border border-slate-200/90 dark:border-white/10 text-slate-800 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D92039] shadow-xs cursor-pointer"
-              aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
-            >
-              {mobileMenuOpen ? (
-                <X className="w-5 h-5" strokeWidth={2.2} />
-              ) : (
-                <Menu className="w-5 h-5" strokeWidth={2.2} />
-              )}
-            </button>
-          </div>
-
+          {/* Mobile Hamburger Button */}
+          <button
+            onClick={() => setMobileMenuOpen(true)}
+            className="lg:hidden w-11 h-11 flex items-center justify-center rounded-2xl bg-slate-100 hover:bg-slate-200/80 dark:bg-white/5 hover:dark:bg-white/10 border border-slate-200/90 dark:border-white/10 text-slate-800 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D92039] shadow-xs cursor-pointer"
+            aria-label="Open Menu"
+          >
+            <Menu className="w-5 h-5" strokeWidth={2.2} />
+          </button>
         </div>
       </header>
 
@@ -121,7 +113,7 @@ export const Navbar: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-30 lg:hidden"
+            className="fixed inset-0 z-50 lg:hidden"
           >
             {/* Backdrop */}
             <div
@@ -135,15 +127,39 @@ export const Navbar: React.FC = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 28, stiffness: 280 }}
-              className="absolute top-0 right-0 bottom-0 w-full max-w-sm bg-white dark:bg-[#0E1017] border-l border-slate-200 dark:border-white/10 p-6 pt-24 flex flex-col justify-between shadow-2xl overflow-y-auto"
+              className="absolute top-0 right-0 bottom-0 w-full max-w-sm bg-white dark:bg-[#0E1017] border-l border-slate-200 dark:border-white/10 p-6 pt-6 flex flex-col justify-between shadow-2xl overflow-y-auto"
             >
               <div className="space-y-6">
-                <div className="flex items-center justify-between px-3">
-                  <div className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                    Navigation
+                {/* Drawer Top Bar with Brand, Theme Toggle, and Close Button */}
+                <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-white/10">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#9B111E] to-[#D92039] p-0.5 flex items-center justify-center shadow-sm">
+                      <div className="w-full h-full bg-[#08090E] rounded-[6px] flex items-center justify-center">
+                        <Radio className="w-4 h-4 text-[#D92039]" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-sm font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
+                        CARDINAL
+                      </span>
+                      <span className="text-[9px] font-semibold tracking-widest text-slate-500 uppercase">
+                        Menu
+                      </span>
+                    </div>
                   </div>
-                  <ThemeToggle />
+
+                  <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    <button
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="w-11 h-11 flex items-center justify-center rounded-2xl bg-slate-100 hover:bg-slate-200/80 dark:bg-white/5 border border-slate-200/90 dark:border-white/10 text-slate-800 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white transition-colors focus:outline-none cursor-pointer"
+                      aria-label="Close Menu"
+                    >
+                      <X className="w-5 h-5" strokeWidth={2.2} />
+                    </button>
+                  </div>
                 </div>
+
                 <nav className="flex flex-col space-y-1">
                   {navLinks.map((link, idx) => {
                     const isActive = location.pathname === link.href;
