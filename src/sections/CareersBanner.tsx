@@ -5,7 +5,6 @@ import { Button } from '../components/ui/Button';
 import { Modal } from '../components/ui/Modal';
 import { CheckCircle2 } from 'lucide-react';
 
-
 export const CareersBanner: React.FC = () => {
   const [isCvModalOpen, setIsCvModalOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -21,7 +20,7 @@ export const CareersBanner: React.FC = () => {
 
   return (
     <>
-      <section className="py-24 md:py-32 relative bg-[#0B0D14] border-t border-b border-white/5 overflow-hidden">
+      <section className="py-24 md:py-32 relative bg-slate-50 dark:bg-[#0B0D14] border-t border-b border-slate-200 dark:border-white/5 overflow-hidden transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8 space-y-6">
@@ -46,14 +45,14 @@ export const CareersBanner: React.FC = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-4 p-8 rounded-3xl bg-[#0E1017] border border-white/10 space-y-4">
-              <span className="text-xs font-mono font-bold text-[#C5A880] uppercase tracking-wider block">
+            <div className="lg:col-span-4 p-8 rounded-3xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 space-y-4 shadow-sm dark:shadow-none">
+              <span className="text-xs font-mono font-bold text-[#9B111E] dark:text-[#C5A880] uppercase tracking-wider block">
                 Talent Community
               </span>
-              <h3 className="text-xl font-bold text-white leading-snug">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white leading-snug">
                 Passionate about media, engineering, or storytelling?
               </h3>
-              <p className="text-xs text-slate-400 leading-relaxed font-normal">
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
                 Even if there is no current opening matching your profile, we welcome general talent inquiries from exceptional professionals.
               </p>
               <button
@@ -80,47 +79,47 @@ export const CareersBanner: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             className="py-10 text-center space-y-3"
           >
-            <div className="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 mx-auto">
+            <div className="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-500 mx-auto">
               <CheckCircle2 className="w-6 h-6" />
             </div>
-            <h4 className="text-lg font-bold text-white">Application Received</h4>
-            <p className="text-xs text-slate-400 max-w-xs mx-auto">
+            <h4 className="text-lg font-bold text-slate-900 dark:text-white">Application Received</h4>
+            <p className="text-xs text-slate-600 dark:text-slate-400 max-w-xs mx-auto">
               Thank you for your interest in Cardinal Broadcasting. Our team will review your submission.
             </p>
           </motion.div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1">
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                 Full Name
               </label>
               <input
                 type="text"
                 required
                 placeholder="e.g. Amina Bello"
-                className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors placeholder:text-slate-400 dark:placeholder:text-slate-500"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1">
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                 Email Address
               </label>
               <input
                 type="email"
                 required
                 placeholder="amina@example.com"
-                className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors placeholder:text-slate-400 dark:placeholder:text-slate-500"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1">
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                 Area of Interest / Expertise
               </label>
               <select
                 required
-                className="w-full px-4 py-2.5 rounded-xl bg-[#0E1017] border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors"
               >
                 <option value="Broadcast Operations">Broadcast Operations & Production</option>
                 <option value="Digital Media">Digital Media & Content Creation</option>
@@ -131,24 +130,24 @@ export const CareersBanner: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1">
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                 Portfolio / LinkedIn URL
               </label>
               <input
                 type="url"
                 placeholder="https://linkedin.com/in/..."
-                className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors placeholder:text-slate-400 dark:placeholder:text-slate-500"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1">
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                 Short Introduction / Note
               </label>
               <textarea
                 rows={3}
                 placeholder="Briefly tell us what drives your passion for media..."
-                className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors resize-none"
+                className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors resize-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
               />
             </div>
 

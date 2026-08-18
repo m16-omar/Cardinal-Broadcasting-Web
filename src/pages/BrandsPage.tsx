@@ -16,7 +16,7 @@ export const BrandsPage: React.FC = () => {
         breadcrumbs={[{ label: 'Our Brands' }]}
       />
 
-      <section className="py-20 md:py-28 bg-[#08090E] relative overflow-hidden">
+      <section className="py-20 md:py-28 bg-slate-50 dark:bg-[#08090E] relative overflow-hidden transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
           {brandsList.map((brand, index) => (
             <BrandEditorialRow key={brand.id} brand={brand} index={index} />
