@@ -65,8 +65,9 @@ export const brandsList: Brand[] = [
       'Direct studio immersion & industry mentorship from seasoned pros',
     ],
     websiteUrl: 'https://citymediaacademy.com',
-    ctaText: 'Visit City Media Academy',
+    ctaText: 'Visit CMA',
     imageUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop',
+
     accentColor: '#7C3AED',
   },
 ];

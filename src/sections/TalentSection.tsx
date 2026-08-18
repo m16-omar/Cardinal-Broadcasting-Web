@@ -74,7 +74,7 @@ export const TalentSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#9B111E] hover:bg-[#D92039] text-white font-semibold text-sm shadow-xl shadow-[#9B111E]/25 transition-all duration-300 group cursor-pointer"
               >
-                <span>Explore City Media Academy</span>
+                <span>Explore CMA</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
               <span className="text-xs text-slate-500 font-mono">
