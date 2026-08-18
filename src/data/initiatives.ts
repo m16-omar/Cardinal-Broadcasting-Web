@@ -1,4 +1,5 @@
-import pitcImg from '../assets/PITC.jpeg';
+import pitcImg from '../assets/PITC.png';
+
 
 export interface Initiative {
   id: string;

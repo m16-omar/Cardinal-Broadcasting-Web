@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Sparkles } from 'lucide-react';
-import pitcImg from '../assets/PITC.jpeg';
+import pitcImg from '../assets/PITC.png';
+
 
 export const EditorialBanner: React.FC = () => {
   return (

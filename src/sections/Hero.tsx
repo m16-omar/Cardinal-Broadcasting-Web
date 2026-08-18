@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { Radio } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { companyDetails } from '../data/company';
-import pitcImg from '../assets/PITC.jpeg';
+import pitcImg from '../assets/PITC.png';
+
 
 
 export const Hero: React.FC = () => {
