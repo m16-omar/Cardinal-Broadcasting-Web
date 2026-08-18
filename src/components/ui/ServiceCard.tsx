@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Radio, Clapperboard, Globe, TrendingUp, GraduationCap, Sparkles, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { ServiceCapability } from '../../data/services';
+import type { ServiceCapability } from '../../data/services';
+
 
 interface ServiceCardProps {
   service: ServiceCapability;

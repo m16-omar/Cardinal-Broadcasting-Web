@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
-import { PortfolioBrand } from '../../data/portfolio';
+import type { PortfolioBrand } from '../../data/portfolio';
+
 
 interface PortfolioCardProps {
   brand: PortfolioBrand;

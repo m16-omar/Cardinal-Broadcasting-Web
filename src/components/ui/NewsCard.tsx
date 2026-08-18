@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { NewsArticle } from '../../data/news';
+import type { NewsArticle } from '../../data/news';
+
 
 interface NewsCardProps {
   article: NewsArticle;

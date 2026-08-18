@@ -6,7 +6,7 @@ import { ApproachSection } from '../sections/ApproachSection';
 import { TalentSection } from '../sections/TalentSection';
 import { FinalCta } from '../sections/FinalCta';
 import { Radio, Eye, Heart, Compass, ShieldCheck, Zap } from 'lucide-react';
-import { companyDetails } from '../data/company';
+
 
 export const AboutPage: React.FC = () => {
   const values = [
@@ -140,7 +140,7 @@ export const AboutPage: React.FC = () => {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((v, idx) => {
+            {values.map((v) => {
               const Icon = v.icon;
               return (
                 <div
