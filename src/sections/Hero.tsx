@@ -5,12 +5,11 @@ import { Button } from '../components/ui/Button';
 import { companyDetails } from '../data/company';
 import cardinalControlRoomImg from '../assets/Cardinal control room.png';
 
-
 export const Hero: React.FC = () => {
   return (
-    <section className="relative pt-8 pb-20 md:pt-16 md:pb-28 lg:pt-20 lg:pb-36 overflow-hidden">
+    <section className="relative pt-8 pb-20 md:pt-16 md:pb-28 lg:pt-20 lg:pb-36 overflow-hidden transition-colors duration-300">
       {/* Background Decorative Grids */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -21,7 +20,7 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#9B111E]/15 border border-[#D92039]/30 text-[#D92039] text-xs font-bold uppercase tracking-wider"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#9B111E]/10 dark:bg-[#9B111E]/15 border border-[#D92039]/30 text-[#D92039] text-xs font-bold uppercase tracking-wider"
             >
               <Radio className="w-3.5 h-3.5 text-[#D92039] animate-pulse" />
               <span>Nigerian Media Conglomerate & Ecosystem</span>
@@ -34,13 +33,13 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-4"
             >
-              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black text-white tracking-tight leading-[1.05]">
+              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.05]">
                 Shaping the{' '}
                 <span className="bg-gradient-to-r from-[#D92039] via-[#E0354E] to-[#C5A880] bg-clip-text text-transparent">
                   Future of Media.
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl font-medium text-slate-300">
+              <p className="text-lg sm:text-xl font-medium text-slate-700 dark:text-slate-300">
                 {companyDetails.supportingStatement}
               </p>
             </motion.div>
@@ -50,7 +49,7 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl font-normal"
+              className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl font-normal"
             >
               {companyDetails.shortDescription}
             </motion.p>
@@ -70,26 +69,25 @@ export const Hero: React.FC = () => {
               </Button>
             </motion.div>
 
-
             {/* Quick Metrics Bar */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="pt-6 border-t border-white/10 flex items-center gap-8 text-xs text-slate-400"
+              className="pt-6 border-t border-slate-200 dark:border-white/10 flex items-center gap-8 text-xs text-slate-500 dark:text-slate-400"
             >
               <div>
-                <span className="block text-white font-bold text-base">3 Platforms</span>
+                <span className="block text-slate-900 dark:text-white font-bold text-base">3 Platforms</span>
                 <span>Broadcasting & Education</span>
               </div>
-              <div className="w-px h-8 bg-white/10" />
+              <div className="w-px h-8 bg-slate-200 dark:bg-white/10" />
               <div>
-                <span className="block text-white font-bold text-base">Annual Flagship</span>
+                <span className="block text-slate-900 dark:text-white font-bold text-base">Annual Flagship</span>
                 <span>Praise in the City</span>
               </div>
-              <div className="w-px h-8 bg-white/10 hidden sm:block" />
+              <div className="w-px h-8 bg-slate-200 dark:bg-white/10 hidden sm:block" />
               <div className="hidden sm:block">
-                <span className="block text-white font-bold text-base">100% African</span>
+                <span className="block text-slate-900 dark:text-white font-bold text-base">100% African</span>
                 <span>Next-Gen Media Talent</span>
               </div>
             </motion.div>
@@ -102,14 +100,13 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden border border-white/15 bg-[#0E1017] shadow-2xl group">
+            <div className="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden border border-slate-200 dark:border-white/15 bg-white dark:bg-[#0E1017] shadow-xl dark:shadow-2xl group">
               <img
                 src={cardinalControlRoomImg}
                 alt="Cardinal Broadcasting Master Control Room"
                 className="w-full h-80 sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95"
               />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-[#08090E]/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 dark:from-[#08090E]/80 via-transparent to-transparent pointer-events-none" />
             </div>
           </motion.div>
         </div>
@@ -117,5 +114,3 @@ export const Hero: React.FC = () => {
     </section>
   );
 };
-
-

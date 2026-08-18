@@ -11,7 +11,7 @@ export const Introduction: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 relative bg-[#08090E] border-t border-b border-white/5 overflow-hidden">
+    <section className="py-20 md:py-28 relative bg-slate-50 dark:bg-[#08090E] border-t border-b border-slate-200 dark:border-white/5 overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Heading & Narrative (7 cols) */}
@@ -21,7 +21,7 @@ export const Introduction: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-widest text-[#C5A880]"
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200/60 dark:bg-white/5 border border-slate-300/80 dark:border-white/10 text-xs font-semibold uppercase tracking-widest text-[#9B111E] dark:text-[#C5A880]"
             >
               <span>Our Philosophy</span>
             </motion.div>
@@ -31,7 +31,7 @@ export const Introduction: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-[1.15]"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.15]"
             >
               More Than Media.{' '}
               <span className="bg-gradient-to-r from-[#D92039] via-[#E0354E] to-[#C5A880] bg-clip-text text-transparent">
@@ -44,7 +44,7 @@ export const Introduction: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl font-normal"
+              className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl font-normal"
             >
               {companyDetails.editorialIntro.narrative}
             </motion.p>
@@ -60,7 +60,7 @@ export const Introduction: React.FC = () => {
               {companyDetails.editorialIntro.keywords.map((word, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold text-white hover:border-[#D92039]/50 hover:bg-[#9B111E]/10 transition-all duration-300 shadow-sm"
+                  className="px-4 py-2 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm font-semibold text-slate-800 dark:text-white hover:border-[#D92039]/50 hover:bg-[#9B111E]/10 transition-all duration-300 shadow-xs dark:shadow-sm"
                 >
                   {word}
                 </span>
@@ -77,15 +77,15 @@ export const Introduction: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="p-5 sm:p-6 rounded-2xl bg-[#0E1017] border border-white/10 hover:border-[#D92039]/30 transition-all duration-300 group shadow-md"
+                className="p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 hover:border-[#D92039]/30 transition-all duration-300 group shadow-sm dark:shadow-md"
               >
                 <div className="text-xs font-mono font-bold text-[#D92039] mb-2">
                   0{idx + 1}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-1 group-hover:text-[#D92039] transition-colors">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1 group-hover:text-[#D92039] transition-colors">
                   {pillar.label}
                 </h3>
-                <p className="text-xs text-slate-400 leading-relaxed font-normal">
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-normal">
                   {pillar.desc}
                 </p>
               </motion.div>
