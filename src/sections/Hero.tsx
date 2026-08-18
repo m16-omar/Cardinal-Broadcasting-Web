@@ -3,9 +3,6 @@ import { motion } from 'framer-motion';
 import { Radio } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { companyDetails } from '../data/company';
-import pitcImg from '../assets/PITC.png';
-
-
 
 export const Hero: React.FC = () => {
   return (
@@ -95,103 +92,26 @@ export const Hero: React.FC = () => {
             </motion.div>
           </div>
 
-          {/* Right Column: Sophisticated Composite Media Showcase (5 cols) */}
+          {/* Right Column: Clean Studio Media Frame (5 cols) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-5 relative mt-6 lg:mt-0"
+            className="lg:col-span-5 relative"
           >
-            {/* Visual Mosaic Composition */}
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Main Visual: Studio Production & Broadcasting */}
-              <div className="relative rounded-3xl overflow-hidden border border-white/20 bg-[#0E1017] shadow-2xl pb-16">
-                <img
-                  src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1000&auto=format&fit=crop"
-                  alt="Cardinal Broadcasting Studio Production"
-                  className="w-full h-80 sm:h-96 object-cover filter brightness-95"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#08090E] via-[#08090E]/40 to-transparent" />
-
-                {/* Bottom Interactive Bar: Broadcasting Platforms */}
-                <div className="absolute bottom-3 left-3 right-3 p-3.5 sm:p-4 rounded-2xl bg-[#0E1017]/95 backdrop-blur-xl border border-white/20 shadow-2xl flex items-center justify-between z-10">
-                  <div className="space-y-0.5">
-                    <span className="text-xs sm:text-sm font-bold text-white block">
-                      Broadcasting & Audio Engineering
-                    </span>
-                    <span className="text-xs font-medium text-slate-300 block">
-                      City 105.1 FM & 93.5 Area FM
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 pl-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_10px_#10B981] animate-pulse" />
-                    <span className="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-wider hidden sm:inline-block">
-                      LIVE
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Button Badge: City Media Academy & Talent */}
-              <motion.a
-                href="https://citymediaacademy.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="absolute -top-5 -right-3 sm:-right-5 p-3 sm:p-3.5 rounded-2xl bg-[#0E1017]/95 backdrop-blur-xl border border-white/20 hover:border-[#7C3AED]/60 shadow-2xl flex items-center gap-3 transition-all duration-300 hover:scale-105 group z-20"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop"
-                  alt="City Media Academy"
-                  className="w-11 h-11 rounded-xl object-cover border border-white/10"
-                />
-                <div>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-xs sm:text-sm font-bold text-white block group-hover:text-[#A78BFA] transition-colors">
-                      City Media Academy
-                    </span>
-                    <span className="text-slate-400 group-hover:text-white transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">↗</span>
-                  </div>
-                  <span className="text-[11px] text-[#E0354E] font-semibold block">
-                    Talent Development
-                  </span>
-                </div>
-              </motion.a>
-
-              {/* Floating Button Badge: Praise in the City */}
-              <motion.a
-                href="https://praiseinthecity.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="absolute -bottom-5 -left-3 sm:-left-5 p-3 sm:p-3.5 rounded-2xl bg-[#0E1017]/95 backdrop-blur-xl border border-white/20 hover:border-[#D92039]/60 shadow-2xl flex items-center gap-3 transition-all duration-300 hover:scale-105 group z-20"
-              >
-                <img
-                  src={pitcImg}
-                  alt="Praise in the City"
-                  className="w-11 h-11 rounded-xl object-cover border border-white/10"
-                />
-                <div>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-xs sm:text-sm font-bold text-white block group-hover:text-[#D92039] transition-colors">
-                      Praise in the City
-                    </span>
-                    <span className="text-slate-400 group-hover:text-white transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">↗</span>
-                  </div>
-                  <span className="text-[11px] text-[#C5A880] font-semibold block">
-                    Flagship Annual Festival
-                  </span>
-                </div>
-              </motion.a>
+            <div className="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden border border-white/15 bg-[#0E1017] shadow-2xl group">
+              <img
+                src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1000&auto=format&fit=crop"
+                alt="Cardinal Broadcasting Studio Production"
+                className="w-full h-80 sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#08090E]/80 via-transparent to-transparent pointer-events-none" />
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
   );
 };
+
+
