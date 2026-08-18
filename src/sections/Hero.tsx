@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Radio } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { companyDetails } from '../data/company';
+import cardinalControlRoomImg from '../assets/Cardinal control room.png';
+
 
 export const Hero: React.FC = () => {
   return (
@@ -101,10 +103,11 @@ export const Hero: React.FC = () => {
           >
             <div className="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden border border-white/15 bg-[#0E1017] shadow-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1000&auto=format&fit=crop"
-                alt="Cardinal Broadcasting Studio Production"
+                src={cardinalControlRoomImg}
+                alt="Cardinal Broadcasting Master Control Room"
                 className="w-full h-80 sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95"
               />
+
               <div className="absolute inset-0 bg-gradient-to-t from-[#08090E]/80 via-transparent to-transparent pointer-events-none" />
             </div>
           </motion.div>
