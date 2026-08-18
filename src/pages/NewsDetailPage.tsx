@@ -4,7 +4,6 @@ import { Calendar, Clock, ArrowLeft, Share2, Tag, UserCheck } from 'lucide-react
 import { corporateNews } from '../data/news';
 import { NewsCard } from '../components/ui/NewsCard';
 
-
 export const NewsDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const article = corporateNews.find((item) => item.slug === slug);
@@ -31,13 +30,13 @@ export const NewsDetailPage: React.FC = () => {
   };
 
   return (
-    <div className="py-12 md:py-20 bg-[#08090E] min-h-screen">
+    <div className="py-12 md:py-20 bg-slate-50 dark:bg-[#08090E] min-h-screen transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Back Link */}
         <div>
           <Link
             to="/news"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to All News</span>
@@ -46,16 +45,16 @@ export const NewsDetailPage: React.FC = () => {
 
         {/* Article Header */}
         <header className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#9B111E]/15 border border-[#D92039]/30 text-[#D92039] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#9B111E]/10 dark:bg-[#9B111E]/15 border border-[#D92039]/30 text-[#D92039] text-xs font-bold uppercase tracking-wider">
             <Tag className="w-3.5 h-3.5" />
             <span>{article.category}</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-[1.15]">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.15]">
             {article.title}
           </h1>
 
-          <div className="flex flex-wrap items-center justify-between gap-4 py-4 border-t border-b border-white/10 text-xs text-slate-400">
+          <div className="flex flex-wrap items-center justify-between gap-4 py-4 border-t border-b border-slate-200 dark:border-white/10 text-xs text-slate-500 dark:text-slate-400">
             <div className="flex items-center gap-6">
               <span className="flex items-center gap-1.5">
                 <Calendar className="w-4 h-4 text-[#D92039]" />
@@ -73,7 +72,7 @@ export const NewsDetailPage: React.FC = () => {
 
             <button
               onClick={handleShare}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-xs font-medium transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-200/70 hover:bg-slate-200 dark:bg-white/5 dark:hover:bg-white/10 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white text-xs font-medium transition-colors cursor-pointer"
             >
               <Share2 className="w-3.5 h-3.5" />
               <span>Share</span>
@@ -82,7 +81,7 @@ export const NewsDetailPage: React.FC = () => {
         </header>
 
         {/* Featured Image */}
-        <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-72 sm:h-96 md:h-[450px]">
+        <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-xl dark:shadow-2xl h-72 sm:h-96 md:h-[450px]">
           <img
             src={article.imageUrl}
             alt={article.title}
@@ -91,8 +90,8 @@ export const NewsDetailPage: React.FC = () => {
         </div>
 
         {/* Article Body */}
-        <article className="space-y-6 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-          <p className="text-xl sm:text-2xl font-medium text-white leading-relaxed border-l-2 border-[#D92039] pl-4 italic">
+        <article className="space-y-6 text-base sm:text-lg text-slate-700 dark:text-slate-300 leading-relaxed font-normal">
+          <p className="text-xl sm:text-2xl font-medium text-slate-900 dark:text-white leading-relaxed border-l-2 border-[#D92039] pl-4 italic">
             {article.excerpt}
           </p>
 
@@ -102,19 +101,19 @@ export const NewsDetailPage: React.FC = () => {
         </article>
 
         {/* Official Editorial Tag */}
-        <div className="p-6 rounded-2xl bg-[#0E1017] border border-white/10 space-y-2">
-          <span className="text-xs font-mono font-bold text-[#C5A880] uppercase tracking-wider block">
+        <div className="p-6 rounded-2xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 space-y-2 shadow-sm dark:shadow-none">
+          <span className="text-xs font-mono font-bold text-[#9B111E] dark:text-[#C5A880] uppercase tracking-wider block">
             Official Statement
           </span>
-          <p className="text-xs text-slate-400 leading-relaxed">
+          <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
             Issued by the Corporate Communications & Institutional Affairs desk at Cardinal Broadcasting Limited. For press inquiries, contact <a href="mailto:press@cardinalbroadcasting.org" className="text-[#D92039] hover:underline">press@cardinalbroadcasting.org</a>.
           </p>
         </div>
 
         {/* Related News Section */}
         {relatedArticles.length > 0 && (
-          <section className="pt-12 border-t border-white/10 space-y-8">
-            <h3 className="text-2xl font-bold text-white">More From Cardinal</h3>
+          <section className="pt-12 border-t border-slate-200 dark:border-white/10 space-y-8">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">More From Cardinal</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relatedArticles.map((rel, index) => (
                 <NewsCard key={rel.id} article={rel} index={index} />

@@ -8,7 +8,6 @@ import { FinalCta } from '../sections/FinalCta';
 import { initiatives } from '../data/initiatives';
 import { Award, Users2, Sparkles } from 'lucide-react';
 
-
 export const ImpactPage: React.FC = () => {
   const impactStories = [
     {
@@ -41,7 +40,7 @@ export const ImpactPage: React.FC = () => {
       <ImpactSection />
 
       {/* Impact Dimensions */}
-      <section className="py-24 bg-[#08090E]">
+      <section className="py-24 bg-slate-50 dark:bg-[#08090E] transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           <SectionHeader
             badge="Three Pillars of Impact"
@@ -58,13 +57,13 @@ export const ImpactPage: React.FC = () => {
               return (
                 <div
                   key={story.title}
-                  className="p-8 rounded-3xl bg-[#0E1017] border border-white/10 hover:border-[#D92039]/30 transition-all shadow-xl space-y-4"
+                  className="p-8 rounded-3xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 hover:border-[#D92039]/30 transition-all shadow-sm dark:shadow-xl space-y-4"
                 >
                   <div className="w-12 h-12 rounded-2xl bg-[#9B111E]/10 border border-[#9B111E]/30 flex items-center justify-center text-[#D92039]">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-white">{story.title}</h3>
-                  <p className="text-sm text-slate-400 leading-relaxed font-normal">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">{story.title}</h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
                     {story.desc}
                   </p>
                 </div>
@@ -75,7 +74,7 @@ export const ImpactPage: React.FC = () => {
       </section>
 
       {/* Flagship Initiative Feature */}
-      <section className="py-20 bg-[#0B0D14] border-t border-b border-white/5">
+      <section className="py-20 bg-slate-100/70 dark:bg-[#0B0D14] border-t border-b border-slate-200 dark:border-white/5 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <SectionHeader
             badge="Annual Flagship Event"

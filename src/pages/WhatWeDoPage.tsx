@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PageHeader } from '../components/ui/PageHeader';
 import { FinalCta } from '../sections/FinalCta';
-
 import { corporateServices } from '../data/services';
 import { Radio, Clapperboard, Globe, TrendingUp, GraduationCap, Sparkles, CheckCircle2 } from 'lucide-react';
 import { Button } from '../components/ui/Button';
@@ -39,7 +38,7 @@ export const WhatWeDoPage: React.FC = () => {
       />
 
       {/* Capabilities Deep Dive */}
-      <section className="py-24 relative bg-[#08090E] overflow-hidden">
+      <section className="py-24 relative bg-slate-50 dark:bg-[#08090E] overflow-hidden transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
           {corporateServices.map((service, index) => {
             const isEven = index % 2 === 1;
@@ -50,13 +49,13 @@ export const WhatWeDoPage: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center p-8 sm:p-12 rounded-3xl bg-[#0E1017] border border-white/10 ${
+                className={`grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center p-8 sm:p-12 rounded-3xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none ${
                   isEven ? 'lg:flex-row-reverse' : ''
                 }`}
               >
                 {/* Visual / Icon Box (5 cols) */}
                 <div className={`lg:col-span-5 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                  <div className="p-8 sm:p-10 rounded-2xl bg-[#08090E] border border-white/10 space-y-6">
+                  <div className="p-8 sm:p-10 rounded-2xl bg-slate-50 dark:bg-[#08090E] border border-slate-200 dark:border-white/10 space-y-6">
                     <div className="flex items-center justify-between">
                       <div className="w-14 h-14 rounded-2xl bg-[#9B111E]/10 border border-[#9B111E]/30 flex items-center justify-center">
                         {getIcon(service.iconName)}
@@ -66,13 +65,13 @@ export const WhatWeDoPage: React.FC = () => {
                       </span>
                     </div>
 
-                    <h4 className="text-xl font-bold text-white">
+                    <h4 className="text-xl font-bold text-slate-900 dark:text-white">
                       Core Offerings & Deliverables
                     </h4>
 
                     <div className="space-y-3">
                       {service.offerings.map((offering, idx) => (
-                        <div key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
+                        <div key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
                           <CheckCircle2 className="w-4 h-4 text-[#D92039] shrink-0 mt-0.5" />
                           <span>{offering}</span>
                         </div>
@@ -83,16 +82,16 @@ export const WhatWeDoPage: React.FC = () => {
 
                 {/* Narrative Description (7 cols) */}
                 <div className={`lg:col-span-7 space-y-6 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <div className="text-xs font-mono font-bold text-[#C5A880] uppercase tracking-wider">
+                  <div className="text-xs font-mono font-bold text-[#9B111E] dark:text-[#C5A880] uppercase tracking-wider">
                     Capability {service.number}
                   </div>
-                  <h3 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                  <h3 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                     {service.title}
                   </h3>
-                  <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
+                  <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
                     {service.shortDescription}
                   </p>
-                  <p className="text-sm sm:text-base text-slate-400 font-normal leading-relaxed">
+                  <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-normal leading-relaxed">
                     {service.detailedDescription}
                   </p>
 

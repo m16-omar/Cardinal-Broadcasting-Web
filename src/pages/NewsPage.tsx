@@ -36,10 +36,10 @@ export const NewsPage: React.FC = () => {
         breadcrumbs={[{ label: 'News' }]}
       />
 
-      <section className="py-20 relative bg-[#08090E] min-h-[600px]">
+      <section className="py-20 relative bg-slate-50 dark:bg-[#08090E] min-h-[600px] transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Filter & Search Bar */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-4 rounded-2xl bg-[#0E1017] border border-white/10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-4 rounded-2xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none">
             {/* Category Badges */}
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 mr-2 flex items-center gap-1">
@@ -52,7 +52,7 @@ export const NewsPage: React.FC = () => {
                   className={`px-4 py-2 rounded-full text-xs font-medium transition-all cursor-pointer ${
                     selectedCategory === category
                       ? 'bg-[#9B111E] text-white font-bold shadow-md shadow-[#9B111E]/30'
-                      : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'
+                      : 'bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-white/10'
                   }`}
                 >
                   {category}
@@ -68,7 +68,7 @@ export const NewsPage: React.FC = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search announcements..."
-                className="w-full pl-10 pr-4 py-2 text-xs bg-white/5 border border-white/10 rounded-full text-white placeholder-slate-500 focus:outline-none focus:border-[#D92039] transition-colors"
+                className="w-full pl-10 pr-4 py-2 text-xs bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-full text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-[#D92039] transition-colors"
               />
             </div>
           </div>
@@ -81,9 +81,9 @@ export const NewsPage: React.FC = () => {
               ))}
             </div>
           ) : (
-            <div className="py-20 text-center space-y-3 bg-[#0E1017] rounded-3xl border border-white/10 p-8">
-              <p className="text-lg font-bold text-white">No announcements found</p>
-              <p className="text-sm text-slate-400">
+            <div className="py-20 text-center space-y-3 bg-white dark:bg-[#0E1017] rounded-3xl border border-slate-200 dark:border-white/10 p-8 shadow-sm">
+              <p className="text-lg font-bold text-slate-900 dark:text-white">No announcements found</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">
                 Try adjusting your search query or selecting a different category filter.
               </p>
             </div>
