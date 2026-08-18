@@ -4,7 +4,8 @@ import { PageHeader } from '../components/ui/PageHeader';
 import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
 import { companyDetails } from '../data/company';
-import { Mail, Phone, MapPin, Clock, CheckCircle2, Building, Send } from 'lucide-react';
+import { Mail, Phone, Clock, CheckCircle2, Building } from 'lucide-react';
+
 
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({

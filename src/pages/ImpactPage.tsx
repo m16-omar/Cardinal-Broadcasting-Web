@@ -6,7 +6,8 @@ import { InitiativeCard } from '../components/ui/InitiativeCard';
 import { TalentSection } from '../sections/TalentSection';
 import { FinalCta } from '../sections/FinalCta';
 import { initiatives } from '../data/initiatives';
-import { HeartHandshake, Award, Users2, Sparkles } from 'lucide-react';
+import { Award, Users2, Sparkles } from 'lucide-react';
+
 
 export const ImpactPage: React.FC = () => {
   const impactStories = [

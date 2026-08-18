@@ -4,7 +4,8 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 import { Button } from '../components/ui/Button';
 import { Modal } from '../components/ui/Modal';
 import { careerOpenings, careerValues } from '../data/careers';
-import { Briefcase, MapPin, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+import { MapPin, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+
 
 export const CareersPage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

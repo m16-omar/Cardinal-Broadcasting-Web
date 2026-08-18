@@ -1,10 +1,9 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowLeft, Share2, Tag, UserCheck } from 'lucide-react';
 import { corporateNews } from '../data/news';
 import { NewsCard } from '../components/ui/NewsCard';
-import { Button } from '../components/ui/Button';
+
 
 export const NewsDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
