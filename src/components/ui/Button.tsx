@@ -35,13 +35,15 @@ export const Button: React.FC<ButtonProps> = ({
     primary:
       'bg-[#9B111E] hover:bg-[#D92039] text-white shadow-lg shadow-[#9B111E]/25 hover:shadow-[#D92039]/40 border border-[#D92039]/40',
     secondary:
-      'bg-[#131722] hover:bg-[#1C2233] text-white border border-white/10 hover:border-white/25 shadow-md',
+      'bg-slate-100 hover:bg-slate-200 dark:bg-[#131722] dark:hover:bg-[#1C2233] text-slate-800 dark:text-white border border-slate-300/80 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/25 shadow-sm dark:shadow-md',
     outline:
-      'bg-transparent hover:bg-white/5 text-white border border-white/20 hover:border-[#D92039] hover:text-[#D92039]',
-    ghost: 'bg-transparent hover:bg-white/5 text-slate-300 hover:text-white',
+      'bg-transparent hover:bg-slate-100 dark:hover:bg-white/5 text-slate-800 dark:text-white border border-slate-300 dark:border-white/20 hover:border-[#D92039] hover:text-[#D92039]',
+    ghost:
+      'bg-transparent hover:bg-slate-100 dark:hover:bg-white/5 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white',
     gold:
       'bg-gradient-to-r from-[#C5A880] to-[#E5D3B8] text-[#08090E] hover:opacity-90 font-semibold shadow-lg shadow-[#C5A880]/20',
   };
+
 
   const iconElement = (
     <>

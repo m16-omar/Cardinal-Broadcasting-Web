@@ -19,27 +19,27 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   breadcrumbs,
 }) => {
   return (
-    <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden border-b border-white/10 bg-[#08090E]">
+    <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden border-b border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#08090E] transition-colors duration-300">
       {/* Background ambient lighting */}
-      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-72 bg-[#9B111E]/15 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/[0.03] via-transparent to-transparent pointer-events-none" />
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-72 bg-[#9B111E]/10 dark:bg-[#9B111E]/15 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-200/40 dark:from-white/[0.03] via-transparent to-transparent pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Breadcrumbs */}
         {breadcrumbs && (
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
-            <Link to="/" className="hover:text-slate-300 transition-colors">
+            <Link to="/" className="hover:text-slate-900 dark:hover:text-slate-300 transition-colors">
               Home
             </Link>
             {breadcrumbs.map((crumb, idx) => (
               <React.Fragment key={idx}>
-                <ChevronRight className="w-3 h-3 text-slate-600" />
+                <ChevronRight className="w-3 h-3 text-slate-400 dark:text-slate-600" />
                 {crumb.href ? (
-                  <Link to={crumb.href} className="hover:text-slate-300 transition-colors">
+                  <Link to={crumb.href} className="hover:text-slate-900 dark:hover:text-slate-300 transition-colors">
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-[#D92039] font-medium">{crumb.label}</span>
+                  <span className="text-[#D92039] font-semibold">{crumb.label}</span>
                 )}
               </React.Fragment>
             ))}
@@ -63,7 +63,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.1]"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.1]"
           >
             {title}{' '}
             {highlightText && (
@@ -77,7 +77,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl text-slate-400 font-normal leading-relaxed"
+            className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-normal leading-relaxed"
           >
             {description}
           </motion.p>
