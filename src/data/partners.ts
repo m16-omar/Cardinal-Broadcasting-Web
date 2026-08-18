@@ -2,18 +2,17 @@ export interface Partner {
   id: string;
   name: string;
   category: string;
-  logoText?: string;
-  logoUrl?: string;
+  shortCode?: string;
+  accentColor?: string;
 }
 
 export const partnersList: Partner[] = [
-  { id: 'p1', name: 'City 105.1 FM', category: 'Broadcasting Partner' },
-  { id: 'p2', name: '93.5 Area FM', category: 'Grassroots Radio' },
-  { id: 'p3', name: 'City Media Academy', category: 'Talent Incubator' },
-  { id: 'p4', name: 'Praise in the City', category: 'Flagship Festival' },
-  { id: 'p5', name: 'Commercial Brands', category: 'Advertising Partner [Placeholder]' },
-  { id: 'p6', name: 'Media Agencies', category: 'Agency Network [Placeholder]' },
-  { id: 'p7', name: 'Broadcast Tech', category: 'Infrastructure [Placeholder]' },
-  { id: 'p8', name: 'Creative Studios', category: 'Content Co-Production [Placeholder]' },
-  { id: 'p9', name: 'Digital Audio Networks', category: 'Streaming Distribution [Placeholder]' },
+  { id: 'p-mtn', name: 'MTN', category: 'Telecommunications', shortCode: 'MTN', accentColor: '#FFCC00' },
+  { id: 'p-airtel', name: 'Airtel', category: 'Telecommunications', shortCode: 'airtel', accentColor: '#E60000' },
+  { id: 'p-glo', name: 'Glo', category: 'Telecommunications', shortCode: 'glo', accentColor: '#28A745' },
+  { id: 'p-gigl', name: 'GIG Logistics', category: 'Logistics & Supply Chain', shortCode: 'GIGL', accentColor: '#E0354E' },
+  { id: 'p-gep', name: 'GEP', category: 'Enterprise & Strategy', shortCode: 'GEP', accentColor: '#0066CC' },
+  { id: 'p-peak', name: 'Peak', category: 'FMCG & Nutrition', shortCode: 'Peak', accentColor: '#0055A5' },
+  { id: 'p-goodmama', name: 'Good Mama', category: 'Consumer Goods', shortCode: 'GoodMama', accentColor: '#E91E63' },
+  { id: 'p-cway', name: 'Cway', category: 'Beverages & Foods', shortCode: 'CWAY', accentColor: '#00BCD4' },
 ];

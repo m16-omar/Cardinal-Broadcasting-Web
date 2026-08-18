@@ -89,7 +89,7 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      <PartnerMarquee label="STRATEGIC ALLIANCES & ECOSYSTEM PLATFORMS" />
+      <PartnerMarquee label="STRATEGIC BRAND & COMMERCIAL PARTNERS" />
 
       {/* Mission & Vision Matrix */}
 
