@@ -23,12 +23,14 @@ export const InitiativeCard: React.FC<InitiativeCardProps> = ({ initiative }) =>
         <img
           src={initiative.backdropUrl}
           alt={initiative.name}
-          className="w-full h-full object-cover opacity-30 scale-105 filter brightness-90 contrast-110"
+          className="w-full h-full object-cover object-right sm:object-center opacity-85 transition-transform duration-700 hover:scale-105"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#08090E] via-[#08090E]/90 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#08090E] via-transparent to-transparent" />
+        {/* Directional gradient to keep text legible while showcasing the live crowd and stage */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#08090E]/95 via-[#08090E]/70 md:via-[#08090E]/50 to-[#08090E]/15" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#08090E]/70 via-transparent to-[#08090E]/20" />
       </div>
+
 
       <div className="relative z-10 p-8 sm:p-12 lg:p-16 max-w-4xl space-y-8">
         {/* Header Tags */}

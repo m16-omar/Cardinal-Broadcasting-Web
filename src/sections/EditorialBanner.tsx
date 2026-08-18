@@ -20,10 +20,12 @@ export const EditorialBanner: React.FC = () => {
             <img
               src={pitcImg}
               alt="Praise in the City Atmosphere"
-              className="w-full h-full object-cover opacity-20 filter brightness-75 scale-105"
+              className="w-full h-full object-cover opacity-60 filter brightness-90 contrast-105 scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#08090E] via-[#08090E]/80 to-[#08090E]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#08090E]/90 via-[#08090E]/65 to-[#08090E]/90" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#08090E]/80 via-transparent to-[#08090E]/50" />
           </div>
+
 
           {/* Ambient Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#9B111E]/20 rounded-full blur-3xl pointer-events-none z-0" />
