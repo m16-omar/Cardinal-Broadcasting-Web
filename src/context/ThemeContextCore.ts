@@ -9,4 +9,4 @@ export interface ThemeContextType {
 }
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
-export const THEME_STORAGE_KEY = 'cardinal_broadcasting_theme';
+export const THEME_STORAGE_KEY = 'cardinal_theme_v2';

@@ -5,9 +5,13 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [theme, setThemeState] = useState<Theme>(() => {
     // 1. Saved user preference
     if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) as Theme | null;
-      if (savedTheme === 'light' || savedTheme === 'dark') {
-        return savedTheme;
+      try {
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) as Theme | null;
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+          return savedTheme;
+        }
+      } catch {
+        // Fall through
       }
     }
     // 2. Default to Light Mode
@@ -28,7 +32,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     try {
       localStorage.setItem(THEME_STORAGE_KEY, theme);
     } catch {
-      // Ignore localStorage errors (e.g. private browsing)
+      // Ignore localStorage errors
     }
   }, [theme]);
 
