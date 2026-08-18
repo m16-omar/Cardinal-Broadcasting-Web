@@ -6,7 +6,6 @@ import { Button } from '../components/ui/Button';
 import { companyDetails } from '../data/company';
 import { Mail, Phone, Clock, CheckCircle2, Building } from 'lucide-react';
 
-
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -46,7 +45,7 @@ export const ContactPage: React.FC = () => {
         breadcrumbs={[{ label: 'Contact' }]}
       />
 
-      <section className="py-24 relative bg-[#08090E] overflow-hidden">
+      <section className="py-24 relative bg-slate-50 dark:bg-[#08090E] overflow-hidden transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Left Column: Corporate Directory & Addresses (5 cols) */}
@@ -61,16 +60,16 @@ export const ContactPage: React.FC = () => {
               </div>
 
               {/* Main Contact Card */}
-              <div className="p-8 rounded-3xl bg-[#0E1017] border border-white/10 space-y-6 shadow-xl">
+              <div className="p-8 rounded-3xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 space-y-6 shadow-sm dark:shadow-xl">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-[#9B111E]/10 border border-[#9B111E]/30 flex items-center justify-center text-[#D92039] shrink-0">
                     <Building className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider block">
+                    <span className="text-xs font-mono font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block">
                       Corporate Office
                     </span>
-                    <p className="text-sm font-bold text-white mt-0.5">
+                    <p className="text-sm font-bold text-slate-900 dark:text-white mt-0.5">
                       {companyDetails.contact.address}
                     </p>
                   </div>
@@ -81,10 +80,10 @@ export const ContactPage: React.FC = () => {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider block">
+                    <span className="text-xs font-mono font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block">
                       Telephone
                     </span>
-                    <p className="text-sm font-bold text-white mt-0.5">
+                    <p className="text-sm font-bold text-slate-900 dark:text-white mt-0.5">
                       {companyDetails.contact.phone}
                     </p>
                   </div>
@@ -95,10 +94,10 @@ export const ContactPage: React.FC = () => {
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider block">
+                    <span className="text-xs font-mono font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block">
                       Office Hours
                     </span>
-                    <p className="text-sm text-slate-300 mt-0.5">
+                    <p className="text-sm text-slate-600 dark:text-slate-300 mt-0.5">
                       {companyDetails.contact.officeHours}
                     </p>
                   </div>
@@ -107,20 +106,20 @@ export const ContactPage: React.FC = () => {
 
               {/* Departmental Desks */}
               <div className="space-y-3">
-                <span className="text-xs font-mono font-bold text-[#C5A880] uppercase tracking-wider block px-1">
+                <span className="text-xs font-mono font-bold text-[#9B111E] dark:text-[#C5A880] uppercase tracking-wider block px-1">
                   Departmental Inquiries
                 </span>
                 <div className="grid grid-cols-1 gap-2.5">
                   {departments.map((dept) => (
                     <div
                       key={dept.name}
-                      className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between"
+                      className="p-4 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between shadow-xs dark:shadow-none"
                     >
                       <div>
-                        <span className="text-xs font-semibold text-white block">
+                        <span className="text-xs font-semibold text-slate-900 dark:text-white block">
                           {dept.name}
                         </span>
-                        <span className="text-xs text-slate-400 font-mono">
+                        <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">
                           {dept.email}
                         </span>
                       </div>
@@ -132,18 +131,18 @@ export const ContactPage: React.FC = () => {
             </div>
 
             {/* Right Column: Professional Contact Form (7 cols) */}
-            <div className="lg:col-span-7 p-8 sm:p-12 rounded-3xl bg-[#0E1017] border border-white/10 shadow-2xl">
+            <div className="lg:col-span-7 p-8 sm:p-12 rounded-3xl bg-white dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-2xl">
               {submitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="py-16 text-center space-y-4"
                 >
-                  <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 mx-auto">
+                  <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-500 mx-auto">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white">Message Transmitted</h3>
-                  <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Message Transmitted</h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
                     Thank you for contacting Cardinal Broadcasting Limited. Your message has been routed to the appropriate corporate desk and our team will respond promptly.
                   </p>
                   <div className="pt-4">
@@ -169,17 +168,17 @@ export const ContactPage: React.FC = () => {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-extrabold text-white tracking-tight">
+                    <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                       Send a Corporate Inquiry
                     </h3>
-                    <p className="text-xs text-slate-400 mt-1">
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                       Complete the form below and our institutional affairs team will be in touch.
                     </p>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
                         Full Name *
                       </label>
                       <input
@@ -188,12 +187,12 @@ export const ContactPage: React.FC = () => {
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                         placeholder="e.g. Oluwaseun Adeyemi"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors placeholder:text-slate-400 dark:placeholder:text-slate-500"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
                         Work / Official Email *
                       </label>
                       <input
@@ -202,14 +201,14 @@ export const ContactPage: React.FC = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="oluwaseun@company.com"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors placeholder:text-slate-400 dark:placeholder:text-slate-500"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
                         Organisation / Company Name
                       </label>
                       <input
@@ -217,18 +216,18 @@ export const ContactPage: React.FC = () => {
                         value={formData.organisation}
                         onChange={(e) => setFormData({ ...formData, organisation: e.target.value })}
                         placeholder="Company or Brand Name"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors placeholder:text-slate-400 dark:placeholder:text-slate-500"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
                         Inquiry Department *
                       </label>
                       <select
                         value={formData.department}
                         onChange={(e) => setFormData({ ...formData, department: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#0E1017] border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-[#0E1017] border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors"
                       >
                         <option value="General Inquiries">General Corporate Inquiries</option>
                         <option value="Commercial Partnerships">Commercial & Advertising Partnerships</option>
@@ -239,7 +238,7 @@ export const ContactPage: React.FC = () => {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                    <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
                       Subject *
                     </label>
                     <input
@@ -248,12 +247,12 @@ export const ContactPage: React.FC = () => {
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       placeholder="Summary of your inquiry or proposal"
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors placeholder:text-slate-400 dark:placeholder:text-slate-500"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                    <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
                       Message *
                     </label>
                     <textarea
@@ -262,7 +261,7 @@ export const ContactPage: React.FC = () => {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Please provide details regarding your inquiry, partnership proposal, or institutional question..."
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:outline-none focus:border-[#D92039] transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-[#D92039] transition-colors resize-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
                     />
                   </div>
 

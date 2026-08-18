@@ -3,10 +3,9 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight, Sparkles } from 'lucide-react';
 import pitcImg from '../assets/PITC.png';
 
-
 export const EditorialBanner: React.FC = () => {
   return (
-    <section className="py-20 relative bg-[#08090E] overflow-hidden">
+    <section className="py-20 relative bg-slate-50 dark:bg-[#08090E] overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
@@ -26,19 +25,17 @@ export const EditorialBanner: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-[#08090E]/80 via-transparent to-[#08090E]/50" />
           </div>
 
-
           {/* Ambient Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#9B111E]/20 rounded-full blur-3xl pointer-events-none z-0" />
 
-
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-widest text-[#C5A880] mb-6">
-            <Sparkles className="w-3.5 h-3.5 text-[#C5A880]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-semibold uppercase tracking-widest text-[#E5D3B8] mb-6 relative z-10">
+            <Sparkles className="w-3.5 h-3.5 text-[#E5D3B8]" />
             <span>Community & Thanksgiving</span>
           </div>
 
           {/* Headline */}
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight max-w-4xl">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight max-w-4xl relative z-10">
             Praise Has{' '}
             <span className="bg-gradient-to-r from-[#C5A880] via-[#E5D3B8] to-white bg-clip-text text-transparent italic font-serif">
               No Price Tag.
@@ -46,12 +43,12 @@ export const EditorialBanner: React.FC = () => {
           </h2>
 
           {/* Supporting Text */}
-          <p className="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg text-slate-200 max-w-2xl font-normal leading-relaxed relative z-10">
             Celebrating faith, music, thanksgiving, and community through Praise in the City — Cardinal’s annual gift of praise to Lagos and Nigeria.
           </p>
 
           {/* Action CTA */}
-          <div className="mt-8">
+          <div className="mt-8 relative z-10">
             <a
               href="https://praiseinthecity.org"
               target="_blank"
