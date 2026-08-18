@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Sparkles } from 'lucide-react';
+import pitcImg from '../assets/PITC.jpeg';
 
 export const EditorialBanner: React.FC = () => {
   return (
@@ -13,8 +14,19 @@ export const EditorialBanner: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="relative rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden border border-[#D92039]/30 bg-gradient-to-r from-[#180509] via-[#0E1017] to-[#12050A] shadow-2xl text-center flex flex-col items-center"
         >
+          {/* Atmospheric Background Image */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src={pitcImg}
+              alt="Praise in the City Atmosphere"
+              className="w-full h-full object-cover opacity-20 filter brightness-75 scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#08090E] via-[#08090E]/80 to-[#08090E]" />
+          </div>
+
           {/* Ambient Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#9B111E]/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#9B111E]/20 rounded-full blur-3xl pointer-events-none z-0" />
+
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-widest text-[#C5A880] mb-6">

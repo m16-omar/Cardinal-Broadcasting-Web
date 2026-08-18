@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Radio, Sparkles } from 'lucide-react';
+import { Radio } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { companyDetails } from '../data/company';
+import pitcImg from '../assets/PITC.jpeg';
+
 
 export const Hero: React.FC = () => {
   return (
@@ -154,9 +156,11 @@ export const Hero: React.FC = () => {
                 className="absolute -bottom-6 -left-4 sm:-left-6 w-52 sm:w-60 p-3.5 rounded-2xl bg-[#0E1017]/90 backdrop-blur-xl border border-[#D92039]/30 shadow-2xl hidden sm:block"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-[#9B111E]/20 flex items-center justify-center text-[#D92039]">
-                    <Sparkles className="w-5 h-5" />
-                  </div>
+                  <img
+                    src={pitcImg}
+                    alt="Praise in the City"
+                    className="w-10 h-10 rounded-xl object-cover"
+                  />
                   <div>
                     <span className="text-xs font-bold text-white block">
                       Praise in the City
@@ -166,6 +170,7 @@ export const Hero: React.FC = () => {
                     </span>
                   </div>
                 </div>
+
               </motion.div>
             </div>
           </motion.div>
