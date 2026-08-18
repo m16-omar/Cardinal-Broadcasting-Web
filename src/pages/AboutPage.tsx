@@ -2,10 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PageHeader } from '../components/ui/PageHeader';
 import { SectionHeader } from '../components/ui/SectionHeader';
+import { PartnerMarquee } from '../components/ui/PartnerMarquee';
 import { ApproachSection } from '../sections/ApproachSection';
 import { TalentSection } from '../sections/TalentSection';
 import { FinalCta } from '../sections/FinalCta';
 import { Radio, Eye, Heart, Compass, ShieldCheck, Zap } from 'lucide-react';
+
 
 
 export const AboutPage: React.FC = () => {
@@ -87,7 +89,10 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      <PartnerMarquee label="STRATEGIC ALLIANCES & ECOSYSTEM PLATFORMS" />
+
       {/* Mission & Vision Matrix */}
+
       <section className="py-20 bg-[#0B0D14] border-t border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
