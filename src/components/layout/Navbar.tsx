@@ -159,8 +159,9 @@ export const Navbar: React.FC = () => {
 
                 <div className="pt-4 border-t border-white/10">
                   <div className="text-xs font-semibold uppercase tracking-widest text-slate-500 px-3 mb-3">
-                    Portfolio & Ecosystem
+                    Brands & Initiatives
                   </div>
+
                   <div className="space-y-1.5">
                     <a
                       href="https://city1051fm.com"

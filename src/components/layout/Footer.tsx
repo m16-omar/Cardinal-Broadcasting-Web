@@ -122,13 +122,13 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Portfolio Brands */}
+          {/* Column 3: Our Brands */}
           <div className="space-y-4">
             <h3 className="text-xs font-bold uppercase tracking-widest text-white">
-              Portfolio Brands
+              Our Brands
             </h3>
             <ul className="space-y-2.5 text-sm">
-              {companyDetails.footerLinks.portfolio.map((link) => (
+              {companyDetails.footerLinks.brands.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
@@ -144,10 +144,10 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 4: Initiatives & Institutional */}
+          {/* Column 4: Initiatives */}
           <div className="space-y-4">
             <h3 className="text-xs font-bold uppercase tracking-widest text-white">
-              Initiatives & Events
+              Initiatives
             </h3>
             <ul className="space-y-2.5 text-sm">
               {companyDetails.footerLinks.initiatives.map((link) => (
@@ -167,14 +167,15 @@ export const Footer: React.FC = () => {
 
             <div className="pt-4 border-t border-white/5 space-y-2">
               <span className="text-xs font-semibold text-slate-300 block">
-                Institutional Domain
+                Corporate Domain
               </span>
-              <span className="text-xs font-mono text-slate-500 block">
+              <span className="text-xs font-mono text-slate-400 block">
                 cardinalbroadcasting.org
               </span>
             </div>
           </div>
         </div>
+
 
         {/* Bottom Legal bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">

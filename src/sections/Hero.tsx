@@ -65,10 +65,11 @@ export const Hero: React.FC = () => {
               <Button href="/about" variant="primary" size="lg" icon="arrow-right">
                 Discover Cardinal
               </Button>
-              <Button href="/portfolio" variant="secondary" size="lg" icon="arrow-up-right">
-                Explore Our Portfolio
+              <Button href="/brands" variant="secondary" size="lg" icon="arrow-up-right">
+                Explore Our Brands
               </Button>
             </motion.div>
+
 
             {/* Quick Metrics Bar */}
             <motion.div

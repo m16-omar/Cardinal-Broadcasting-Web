@@ -9,11 +9,12 @@ export const InitiativesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-14">
           <SectionHeader
-            badge="Audience Experiences & Community"
+            badge="Audience Experiences & Initiatives"
             title="Our Initiatives &"
-            highlightText="Events"
-            subtitle="Beyond broadcasting, Cardinal creates experiences that bring people together, develop talent and create meaningful connections across communities."
+            highlightText="Experiences"
+            subtitle="Beyond broadcasting, we create experiences and initiatives that bring people together and make meaningful connections possible."
           />
+
         </div>
 
         {initiatives.map((initiative) => (

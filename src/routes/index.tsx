@@ -1,12 +1,12 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { HomePage } from '../pages/HomePage';
 import { AboutPage } from '../pages/AboutPage';
-import { PortfolioPage } from '../pages/PortfolioPage';
+import { BrandsPage } from '../pages/BrandsPage';
 import { WhatWeDoPage } from '../pages/WhatWeDoPage';
 import { ImpactPage } from '../pages/ImpactPage';
-// import { NewsPage } from '../pages/NewsPage';
-// import { NewsDetailPage } from '../pages/NewsDetailPage';
+import { NewsPage } from '../pages/NewsPage';
+import { NewsDetailPage } from '../pages/NewsDetailPage';
 import { CareersPage } from '../pages/CareersPage';
 import { ContactPage } from '../pages/ContactPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
@@ -16,15 +16,16 @@ export const AppRoutes: React.FC = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/portfolio" element={<PortfolioPage />} />
+      <Route path="/brands" element={<BrandsPage />} />
+      {/* Backward-compatibility redirect from /portfolio to /brands */}
+      <Route path="/portfolio" element={<Navigate to="/brands" replace />} />
       <Route path="/what-we-do" element={<WhatWeDoPage />} />
       <Route path="/impact" element={<ImpactPage />} />
-      {/* <Route path="/news" element={<NewsPage />} /> */}
-      {/* <Route path="/news/:slug" element={<NewsDetailPage />} /> */}
+      <Route path="/news" element={<NewsPage />} />
+      <Route path="/news/:slug" element={<NewsDetailPage />} />
       <Route path="/careers" element={<CareersPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };
-

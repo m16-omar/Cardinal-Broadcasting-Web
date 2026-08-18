@@ -6,10 +6,10 @@ export interface NavLink {
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Our Portfolio', href: '/portfolio' },
+  { label: 'Our Brands', href: '/brands' },
   { label: 'What We Do', href: '/what-we-do' },
   { label: 'Our Impact', href: '/impact' },
-  // { label: 'News', href: '/news' },
+  { label: 'News', href: '/news' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -22,6 +22,7 @@ export const companyDetails = {
   supportingStatement: 'Broadcasting ideas. Building platforms. Empowering people.',
   shortDescription:
     'Cardinal Broadcasting Limited is a dynamic Nigerian media organisation creating meaningful experiences through broadcasting, digital media, content, education, and community engagement.',
+  footerStatement: 'Building the future of media, people and possibilities.',
   editorialIntro: {
     heading: "More Than Media. We're Building Possibilities.",
     narrative:
@@ -47,21 +48,20 @@ export const companyDetails = {
   footerLinks: {
     company: [
       { label: 'About Us', href: '/about' },
-      { label: 'Our Portfolio', href: '/portfolio' },
+      { label: 'Our Brands', href: '/brands' },
       { label: 'What We Do', href: '/what-we-do' },
       { label: 'Our Impact', href: '/impact' },
-      // { label: 'News & Media', href: '/news' },
+      { label: 'News & Updates', href: '/news' },
       { label: 'Careers', href: '/careers' },
       { label: 'Contact', href: '/contact' },
     ],
-
-    portfolio: [
-      { label: 'City 105.1 FM', href: 'https://city1051fm.com', isExternal: true },
-      { label: '93.5 Area FM', href: 'https://935areafm.com', isExternal: true },
-      { label: 'City Media Academy', href: 'https://citymediaacademy.com', isExternal: true },
+    brands: [
+      { label: 'City 105.1 FM', href: 'https://city1051fm.com', category: 'Broadcasting', isExternal: true },
+      { label: '93.5 Area FM', href: 'https://935areafm.com', category: 'Broadcasting', isExternal: true },
+      { label: 'City Media Academy', href: 'https://citymediaacademy.com', category: 'Media Education & Talent Development', isExternal: true },
     ],
     initiatives: [
-      { label: 'Praise in the City', href: 'https://praiseinthecity.org', isExternal: true },
+      { label: 'Praise in the City', href: 'https://praiseinthecity.org', category: 'Annual Gospel Music & Thanksgiving Festival', isExternal: true },
     ],
   },
 };

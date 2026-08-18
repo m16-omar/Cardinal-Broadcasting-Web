@@ -21,18 +21,18 @@ export const initiatives: Initiative[] = [
   {
     id: 'praise-in-the-city',
     name: 'Praise in the City',
-    type: 'Annual Flagship Initiative & Festival',
-    philosophy: 'Praising God Has No Price Tag',
-    tagline: 'Annual Gospel Music & Thanksgiving Festival',
+    type: 'Initiatives & Experiences',
+    philosophy: 'Praise Has No Price Tag.',
+    tagline: 'A celebration of faith, gospel music, thanksgiving and community.',
     description:
-      'Praise in the City is a major annual outdoor gospel music concert and Thanksgiving celebration on the Lagos mainland, bringing people together through music, worship, thanksgiving, and community. Powered by the Cardinal Broadcasting ecosystem and associated with City 105.1 FM, this event provides free admission, uniting diverse audiences in a spirit of collective gratitude.',
+      'Praise in the City is a major annual outdoor gospel music concert and Thanksgiving celebration associated with the Cardinal Broadcasting ecosystem, bringing people together through music, worship, thanksgiving, and community with free admission to all.',
     location: 'Lagos Mainland, Nigeria',
     admission: 'Free Admission to All',
     features: [
-      'Gospel Music & Worship',
+      'Faith & Gospel Music',
       'Collective Thanksgiving',
       'Community & Fellowship',
-      'Live Outdoor Experience',
+      'Live Audience Experience',
       'Inspirational Celebration',
     ],
     websiteUrl: 'https://praiseinthecity.org',
@@ -41,4 +41,5 @@ export const initiatives: Initiative[] = [
     backdropUrl: pitcImg,
   },
 ];
+
 

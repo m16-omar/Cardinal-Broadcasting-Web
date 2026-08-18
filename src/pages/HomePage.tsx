@@ -2,37 +2,56 @@ import React from 'react';
 import { Hero } from '../sections/Hero';
 import { PartnerMarquee } from '../components/ui/PartnerMarquee';
 import { Introduction } from '../sections/Introduction';
-import { PortfolioSection } from '../sections/PortfolioSection';
-import { InitiativesSection } from '../sections/InitiativesSection';
+import { BrandsSection } from '../sections/BrandsSection';
 import { CapabilitiesSection } from '../sections/CapabilitiesSection';
+import { InitiativesSection } from '../sections/InitiativesSection';
 import { ImpactSection } from '../sections/ImpactSection';
 import { ApproachSection } from '../sections/ApproachSection';
 import { TalentSection } from '../sections/TalentSection';
-import { EditorialBanner } from '../sections/EditorialBanner';
 import { PartnersCta } from '../sections/PartnersCta';
-// import { NewsPreview } from '../sections/NewsPreview';
+import { NewsPreview } from '../sections/NewsPreview';
 import { CareersBanner } from '../sections/CareersBanner';
 import { FinalCta } from '../sections/FinalCta';
 
 export const HomePage: React.FC = () => {
   return (
     <>
+      {/* 01. Hero */}
       <Hero />
+
+      {/* Commercial Partner Marquee */}
       <PartnerMarquee />
+
+      {/* 02. Corporate Introduction */}
       <Introduction />
 
-      <PortfolioSection />
-      <InitiativesSection />
+      {/* 03. Our Brands & Platforms */}
+      <BrandsSection />
+
+      {/* 04. What We Do */}
       <CapabilitiesSection />
+
+      {/* 05. Our Initiatives & Experiences */}
+      <InitiativesSection />
+
+      {/* 06. Our Impact */}
       <ImpactSection />
+
+      {/* 07. Approach & Guiding Principles */}
       <ApproachSection />
+
+      {/* 08. People & Talent */}
       <TalentSection />
-      <EditorialBanner />
+
+      {/* 09. Partnerships */}
       <PartnersCta />
-      {/* <NewsPreview /> */}
+
+      {/* 10. News & Updates */}
+      <NewsPreview />
+
+      {/* Careers Banner & Final CTA */}
       <CareersBanner />
       <FinalCta />
     </>
   );
 };
-
