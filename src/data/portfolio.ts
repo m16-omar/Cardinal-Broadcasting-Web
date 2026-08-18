@@ -1,3 +1,5 @@
+import cityFmBuildingImg from '../assets/city1051fm building.png';
+
 export interface PortfolioBrand {
   id: string;
   name: string;
@@ -28,9 +30,10 @@ export const portfolioBrands: PortfolioBrand[] = [
     ],
     websiteUrl: 'https://city1051fm.com',
     ctaText: 'Visit City 105.1 FM',
-    imageUrl: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1200&auto=format&fit=crop',
+    imageUrl: cityFmBuildingImg,
     accentColor: '#D92039',
   },
+
   {
     id: '93-5-area-fm',
     name: '93.5 Area FM',
