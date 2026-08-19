@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, GraduationCap, CheckCircle2 } from 'lucide-react';
 import { SectionHeader } from '../components/ui/SectionHeader';
+import cmaImg from '../assets/CMA.jpeg';
 
 export const TalentSection: React.FC = () => {
   const benefits = [
@@ -25,8 +26,8 @@ export const TalentSection: React.FC = () => {
           >
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-xl dark:shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop"
-                alt="Media Education & Talent Development"
+                src={cmaImg}
+                alt="City Media Academy (CMA) Training"
                 className="w-full h-80 sm:h-96 object-cover"
                 loading="lazy"
               />

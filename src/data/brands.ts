@@ -1,4 +1,5 @@
 import cityFmBuildingImg from '../assets/city1051fm building.png';
+import cmaImg from '../assets/CMA.jpeg';
 
 export interface Brand {
   id: string;
@@ -66,8 +67,7 @@ export const brandsList: Brand[] = [
     ],
     websiteUrl: 'https://citymediaacademy.com',
     ctaText: 'Visit CMA',
-    imageUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop',
-
+    imageUrl: cmaImg,
     accentColor: '#7C3AED',
   },
 ];
