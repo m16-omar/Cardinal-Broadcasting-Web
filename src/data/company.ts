@@ -9,7 +9,6 @@ export const navLinks: NavLink[] = [
   { label: 'Our Brands', href: '/brands' },
   { label: 'What We Do', href: '/what-we-do' },
   { label: 'Our Impact', href: '/impact' },
-  { label: 'News', href: '/news' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -51,7 +50,6 @@ export const companyDetails = {
       { label: 'Our Brands', href: '/brands' },
       { label: 'What We Do', href: '/what-we-do' },
       { label: 'Our Impact', href: '/impact' },
-      { label: 'News & Updates', href: '/news' },
       { label: 'Careers', href: '/careers' },
       { label: 'Contact', href: '/contact' },
     ],

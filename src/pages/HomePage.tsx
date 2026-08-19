@@ -9,7 +9,6 @@ import { ImpactSection } from '../sections/ImpactSection';
 import { ApproachSection } from '../sections/ApproachSection';
 import { TalentSection } from '../sections/TalentSection';
 import { PartnersCta } from '../sections/PartnersCta';
-import { NewsPreview } from '../sections/NewsPreview';
 import { CareersBanner } from '../sections/CareersBanner';
 import { FinalCta } from '../sections/FinalCta';
 
@@ -45,9 +44,6 @@ export const HomePage: React.FC = () => {
 
       {/* 09. Partnerships */}
       <PartnersCta />
-
-      {/* 10. News & Updates */}
-      <NewsPreview />
 
       {/* Careers Banner & Final CTA */}
       <CareersBanner />
