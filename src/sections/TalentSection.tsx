@@ -68,7 +68,7 @@ export const TalentSection: React.FC = () => {
               ))}
             </div>
 
-            <div className="pt-6 flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="pt-6">
               <a
                 href="https://citymediaacademy.com"
                 target="_blank"
@@ -78,9 +78,6 @@ export const TalentSection: React.FC = () => {
                 <span>Explore CMA</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
-              <span className="text-xs text-slate-500 font-mono">
-                Opens citymediaacademy.com
-              </span>
             </div>
           </div>
         </div>

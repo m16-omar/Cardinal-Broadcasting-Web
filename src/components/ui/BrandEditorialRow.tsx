@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, CheckCircle2, Radio, GraduationCap, Globe } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Radio, GraduationCap } from 'lucide-react';
 import type { Brand } from '../../data/brands';
 
 interface BrandEditorialRowProps {
@@ -57,7 +57,7 @@ export const BrandEditorialRow: React.FC<BrandEditorialRowProps> = ({ brand, ind
               ))}
             </div>
 
-            <div className="pt-4 flex items-center gap-4">
+            <div className="pt-4">
               <a
                 href={brand.websiteUrl}
                 target="_blank"
@@ -67,9 +67,6 @@ export const BrandEditorialRow: React.FC<BrandEditorialRowProps> = ({ brand, ind
                 <span>{brand.ctaText}</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
-              <span className="text-xs text-slate-500 font-mono hidden sm:inline-block">
-                {brand.websiteUrl}
-              </span>
             </div>
           </div>
 
@@ -144,7 +141,7 @@ export const BrandEditorialRow: React.FC<BrandEditorialRowProps> = ({ brand, ind
             ))}
           </div>
 
-          <div className="pt-4 flex flex-wrap items-center gap-4">
+          <div className="pt-4">
             <a
               href={brand.websiteUrl}
               target="_blank"
@@ -154,10 +151,6 @@ export const BrandEditorialRow: React.FC<BrandEditorialRowProps> = ({ brand, ind
               <span>{brand.ctaText}</span>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-            <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 font-mono">
-              <Globe className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" />
-              <span>{brand.websiteUrl}</span>
-            </div>
           </div>
         </div>
       </div>
