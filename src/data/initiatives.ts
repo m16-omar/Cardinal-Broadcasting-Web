@@ -1,6 +1,5 @@
 import pitcImg from '../assets/PITC.png';
 
-
 export interface Initiative {
   id: string;
   name: string;
@@ -8,6 +7,7 @@ export interface Initiative {
   philosophy: string;
   tagline: string;
   description: string;
+  date: string;
   location: string;
   admission: string;
   features: string[];
@@ -25,7 +25,8 @@ export const initiatives: Initiative[] = [
     philosophy: 'Praise Has No Price Tag.',
     tagline: 'A celebration of faith, gospel music, thanksgiving and community.',
     description:
-      'Praise in the City is a major annual outdoor gospel music concert and Thanksgiving celebration associated with the Cardinal Broadcasting ecosystem, bringing people together through music, worship, thanksgiving, and community with free admission to all.',
+      'Praise in the City is a major annual outdoor gospel music concert and Thanksgiving celebration associated with the Cardinal Broadcasting ecosystem, taking place every December 26th and bringing people together through music, worship, thanksgiving, and community with free admission to all.',
+    date: 'December 26th of every year',
     location: 'Police College Ground Ikeja, Lagos',
     admission: 'Free Admission to All',
     features: [
@@ -41,5 +42,3 @@ export const initiatives: Initiative[] = [
     backdropUrl: pitcImg,
   },
 ];
-
-

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Sparkles, MapPin, Ticket } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Calendar, MapPin, Ticket } from 'lucide-react';
 import type { Initiative } from '../../data/initiatives';
 
 interface InitiativeCardProps {
@@ -25,6 +25,12 @@ export const InitiativeCard: React.FC<InitiativeCardProps> = ({ initiative }) =>
               <Sparkles className="w-3.5 h-3.5 text-[#D92039]" />
               <span>{initiative.type}</span>
             </div>
+            {initiative.date && (
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 text-xs font-medium">
+                <Calendar className="w-3 h-3 text-[#9B111E] dark:text-[#C5A880]" />
+                <span>{initiative.date}</span>
+              </div>
+            )}
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 text-xs font-medium">
               <MapPin className="w-3 h-3 text-[#9B111E] dark:text-[#C5A880]" />
               <span>{initiative.location}</span>
@@ -92,7 +98,7 @@ export const InitiativeCard: React.FC<InitiativeCardProps> = ({ initiative }) =>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
             <div className="absolute bottom-4 left-4 right-4 text-white">
               <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-md border border-white/20 inline-block">
-                Annual Thanksgiving Festival • Live Atmosphere
+                Every Dec 26 • Live Festival Atmosphere
               </span>
             </div>
           </div>
