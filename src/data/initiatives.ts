@@ -26,7 +26,7 @@ export const initiatives: Initiative[] = [
     tagline: 'A celebration of faith, gospel music, thanksgiving and community.',
     description:
       'Praise in the City is a major annual outdoor gospel music concert and Thanksgiving celebration associated with the Cardinal Broadcasting ecosystem, bringing people together through music, worship, thanksgiving, and community with free admission to all.',
-    location: 'Lagos Mainland, Nigeria',
+    location: 'Police College Ground Ikeja, Lagos',
     admission: 'Free Admission to All',
     features: [
       'Faith & Gospel Music',

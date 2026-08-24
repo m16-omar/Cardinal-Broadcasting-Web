@@ -77,10 +77,10 @@ export const ImpactPage: React.FC = () => {
       <section className="py-20 bg-slate-100/70 dark:bg-[#0B0D14] border-t border-b border-slate-200 dark:border-white/5 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <SectionHeader
-            badge="Annual Flagship Event"
-            title="Praise in"
-            highlightText="the City"
-            subtitle="Our annual gospel music concert and Thanksgiving festival on the Lagos mainland."
+            badge="Annual Thanksgiving Festival"
+            title="Praise in the City —"
+            highlightText="Praise Has No Price Tag"
+            subtitle="Our annual gospel music concert and Thanksgiving festival at Police College Ground Ikeja, Lagos."
           />
 
           {initiatives.map((initiative) => (
