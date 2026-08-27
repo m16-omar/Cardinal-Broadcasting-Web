@@ -56,7 +56,7 @@ export const companyDetails = {
     brands: [
       { label: 'City 105.1 FM', href: 'https://city1051fm.com', category: 'Broadcasting', isExternal: true },
       { label: '93.5 Area FM', href: 'https://935areafm.com', category: 'Broadcasting', isExternal: true },
-      { label: 'City Media Academy', href: 'https://citymediaacademy.com', category: 'Media Education & Talent Development', isExternal: true },
+      { label: 'City Media Academy', href: 'https://cma-livid.vercel.app', category: 'Media Education & Talent Development', isExternal: true },
     ],
     initiatives: [
       { label: 'Praise in the City', href: 'https://praiseinthecity.org', category: 'Annual Gospel Music & Thanksgiving Festival', isExternal: true },

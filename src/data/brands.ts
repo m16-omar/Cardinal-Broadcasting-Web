@@ -65,7 +65,7 @@ export const brandsList: Brand[] = [
       'Modern digital content creation, storytelling & broadcast ethics',
       'Direct studio immersion & industry mentorship from seasoned pros',
     ],
-    websiteUrl: 'https://citymediaacademy.com',
+    websiteUrl: 'https://cma-livid.vercel.app',
     ctaText: 'Visit CMA',
     imageUrl: cmaImg,
     accentColor: '#7C3AED',

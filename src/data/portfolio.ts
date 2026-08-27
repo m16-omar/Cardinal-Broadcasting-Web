@@ -66,7 +66,7 @@ export const portfolioBrands: PortfolioBrand[] = [
       'Digital content creation & production mastery',
       'Direct studio immersion & industry mentorship',
     ],
-    websiteUrl: 'https://citymediaacademy.com',
+    websiteUrl: 'https://cma-livid.vercel.app',
     ctaText: 'Visit CMA',
     imageUrl: cmaImg,
     accentColor: '#7C3AED',

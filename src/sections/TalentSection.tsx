@@ -70,7 +70,7 @@ export const TalentSection: React.FC = () => {
 
             <div className="pt-6">
               <a
-                href="https://citymediaacademy.com"
+                href="https://cma-livid.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#9B111E] hover:bg-[#D92039] text-white font-semibold text-sm shadow-xl shadow-[#9B111E]/25 transition-all duration-300 group cursor-pointer"
