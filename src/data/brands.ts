@@ -39,7 +39,7 @@ export const brandsList: Brand[] = [
     name: '93.5 Area FM',
     badge: '02 — Broadcasting',
     category: 'Broadcasting',
-    tagline: 'Grassroots Rhythm & Grassroots Voices',
+    tagline: 'One VOICE, Every AREA',
     description:
       'A vibrant radio platform connecting audiences through engaging programming, entertainment, conversations and relevant content.',
     highlights: [

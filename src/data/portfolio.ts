@@ -40,7 +40,7 @@ export const portfolioBrands: PortfolioBrand[] = [
     name: '93.5 Area FM',
     badge: '02 / Broadcasting Platform',
     category: 'Broadcasting',
-    tagline: 'Grassroots Rhythm & Grassroots Voices',
+    tagline: 'One VOICE, Every AREA',
     description:
       'A vibrant radio platform connecting audiences through engaging grassroots programming, popular culture, community dialogue, and locally resonant content.',
     highlights: [
