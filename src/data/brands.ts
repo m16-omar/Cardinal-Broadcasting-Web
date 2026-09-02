@@ -21,7 +21,7 @@ export const brandsList: Brand[] = [
     name: 'City 105.1 FM',
     badge: '01 — Broadcasting',
     category: 'Broadcasting',
-    tagline: 'The Lifestyle & Conversation Station',
+    tagline: 'We Run This City',
     description:
       'A dynamic radio platform delivering engaging conversations, entertainment, information and programming to its audience.',
     highlights: [

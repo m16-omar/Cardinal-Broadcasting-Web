@@ -21,7 +21,7 @@ export const portfolioBrands: PortfolioBrand[] = [
     name: 'City 105.1 FM',
     badge: '01 / Broadcasting Platform',
     category: 'Broadcasting',
-    tagline: 'The Lifestyle & Conversation Station',
+    tagline: 'We Run This City',
     description:
       'A dynamic radio platform delivering engaging conversations, entertainment, information, and high-impact programming to its vibrant metropolitan audience.',
     highlights: [
