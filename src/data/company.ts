@@ -16,7 +16,7 @@ export const navLinks: NavLink[] = [
 export const companyDetails = {
   name: 'Cardinal Broadcasting Limited',
   shortName: 'Cardinal Broadcasting',
-  domain: 'https://cardinalbroadcasting.org',
+  domain: 'https://cardinalbroadcastingltd.com',
   tagline: 'Shaping the Future of Media.',
   supportingStatement: 'Broadcasting ideas. Building platforms. Empowering people.',
   shortDescription:
@@ -29,10 +29,10 @@ export const companyDetails = {
     keywords: ['Inform', 'Entertain', 'Educate', 'Connect', 'Empower'],
   },
   contact: {
-    email: 'info@cardinalbroadcasting.org',
-    businessEmail: 'partnerships@cardinalbroadcasting.org',
-    careersEmail: 'careers@cardinalbroadcasting.org',
-    pressEmail: 'press@cardinalbroadcasting.org',
+    email: 'info@cardinalbroadcastingltd.com',
+    businessEmail: 'partnerships@cardinalbroadcastingltd.com',
+    careersEmail: 'careers@cardinalbroadcastingltd.com',
+    pressEmail: 'press@cardinalbroadcastingltd.com',
     phone: '+234 (0) 1 234 5678',
     address: 'Cardinal Broadcasting House, Lagos, Nigeria',
     officeHours: 'Monday – Friday: 8:00 AM – 6:00 PM (WAT)',

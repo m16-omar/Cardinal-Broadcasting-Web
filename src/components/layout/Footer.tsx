@@ -177,7 +177,7 @@ export const Footer: React.FC = () => {
                 Corporate Domain
               </span>
               <span className="text-xs font-mono text-slate-500 dark:text-slate-400 block">
-                cardinalbroadcasting.org
+                {companyDetails.domain.replace('https://', '')}
               </span>
             </div>
           </div>
