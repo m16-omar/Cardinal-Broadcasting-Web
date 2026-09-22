@@ -54,7 +54,7 @@ export const brandsList: Brand[] = [
   },
   {
     id: 'city-media-academy',
-    name: 'City Media Academy',
+    name: 'Cardinal Media Academy',
     badge: '03 — Media Education & Talent Development',
     category: 'Media Education & Talent Development',
     tagline: 'Empowering the Next Generation of Media Leaders',

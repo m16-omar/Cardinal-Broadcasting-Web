@@ -53,7 +53,7 @@ export const careerOpenings: JobOpening[] = [
   },
   {
     id: 'job-4',
-    title: 'City Media Academy Graduate Fellowship',
+    title: 'Cardinal Media Academy Graduate Fellowship',
     department: 'Media Education',
     type: 'Fellowship / Internship',
     location: 'Lagos, Nigeria',

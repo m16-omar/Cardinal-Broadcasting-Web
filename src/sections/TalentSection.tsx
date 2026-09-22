@@ -27,7 +27,7 @@ export const TalentSection: React.FC = () => {
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-xl dark:shadow-2xl">
               <img
                 src={cmaImg}
-                alt="City Media Academy (CMA) Training"
+                alt="Cardinal Media Academy (CMA) Training"
                 className="w-full h-80 sm:h-96 object-cover"
                 loading="lazy"
               />
@@ -40,7 +40,7 @@ export const TalentSection: React.FC = () => {
                 </div>
                 <div>
                   <span className="text-xs font-bold text-slate-900 dark:text-white block">
-                    City Media Academy (CMA)
+                    Cardinal Media Academy (CMA)
                   </span>
                   <span className="text-[10px] text-slate-500 dark:text-slate-400">
                     Cardinal's Flagship Media Training Arm
@@ -56,7 +56,7 @@ export const TalentSection: React.FC = () => {
               badge="Human Capital & Education"
               title="Investing in the People"
               highlightText="Behind the Media"
-              subtitle="The future of media depends on talented, creative, and adaptable people. Cardinal supports the development of emerging talent through practical exposure, real-world broadcast platforms, and initiatives such as City Media Academy."
+              subtitle="The future of media depends on talented, creative, and adaptable people. Cardinal supports the development of emerging talent through practical exposure, real-world broadcast platforms, and initiatives such as Cardinal Media Academy."
             />
 
             <div className="space-y-3 pt-2">

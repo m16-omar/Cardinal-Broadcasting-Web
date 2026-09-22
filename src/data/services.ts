@@ -80,7 +80,7 @@ export const corporateServices: ServiceCapability[] = [
     shortDescription:
       'Developing the next generation of media professionals through practical hands-on training and mentorship.',
     detailedDescription:
-      'Through initiatives like City Media Academy (CMA), we provide structured, practical industry immersion across broadcasting, journalism, digital content creation, and production management.',
+      'Through initiatives like Cardinal Media Academy (CMA), we provide structured, practical industry immersion across broadcasting, journalism, digital content creation, and production management.',
     iconName: 'GraduationCap',
     offerings: [
       'Broadcast presentation & on-air skills',

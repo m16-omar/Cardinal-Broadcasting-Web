@@ -17,7 +17,7 @@ export const ImpactPage: React.FC = () => {
     },
     {
       title: 'Next-Generation Media Talent',
-      desc: 'Through City Media Academy, we provide emerging African youth with practical studio exposure, building career-ready skills in digital media and broadcasting.',
+      desc: 'Through Cardinal Media Academy, we provide emerging African youth with practical studio exposure, building career-ready skills in digital media and broadcasting.',
       icon: Award,
     },
     {

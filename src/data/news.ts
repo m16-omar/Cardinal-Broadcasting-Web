@@ -15,14 +15,14 @@ export const corporateNews: NewsArticle[] = [
   {
     id: 'news-1',
     slug: 'expanding-media-education-city-media-academy-cohort',
-    title: 'City Media Academy Opens New Cohort for Aspiring Broadcast & Digital Creators',
+    title: 'Cardinal Media Academy Opens New Cohort for Aspiring Broadcast & Digital Creators',
     category: 'Talent & Education',
     date: 'August 14, 2026',
     readTime: '3 min read',
     excerpt:
-      'Cardinal Broadcasting reaffirms its commitment to youth empowerment by launching the next intensive hands-on media training cohort at City Media Academy.',
+      'Cardinal Broadcasting reaffirms its commitment to youth empowerment by launching the next intensive hands-on media training cohort at Cardinal Media Academy.',
     content: [
-      'Cardinal Broadcasting Limited has announced the commencement of admissions for the upcoming media training cycle at City Media Academy (CMA). The program is designed to equip young creative professionals with modern, practical capabilities in audio engineering, on-air presentation, television broadcasting, and digital storytelling.',
+      'Cardinal Broadcasting Limited has announced the commencement of admissions for the upcoming media training cycle at Cardinal Media Academy (CMA). The program is designed to equip young creative professionals with modern, practical capabilities in audio engineering, on-air presentation, television broadcasting, and digital storytelling.',
       'As the African media landscape rapidly evolves, the demand for versatile media practitioners who understand both traditional broadcast ethics and modern digital distribution has never been higher.',
       'Through direct studio immersion at Cardinal Broadcasting facilities, students will gain live studio experience, working alongside seasoned industry producers, sound designers, and content executives.',
     ],
