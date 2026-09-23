@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Radio, ArrowUpRight, MapPin, Mail, Phone } from 'lucide-react';
 import { companyDetails } from '../../data/company';
+import logoImg from '../../assets/cardinal-logo.jpeg';
 
 export const Footer: React.FC = () => {
   const getSocialIcon = (iconName: string) => {
@@ -55,16 +56,18 @@ export const Footer: React.FC = () => {
               className="flex items-center gap-3 group focus:outline-none inline-flex"
               aria-label="Cardinal Broadcasting Limited Home"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9B111E] via-[#D92039] to-[#800A15] p-0.5 shadow-lg shadow-[#9B111E]/20 flex items-center justify-center">
-                <div className="w-full h-full bg-[#08090E] rounded-[10px] flex items-center justify-center">
-                  <Radio className="w-5 h-5 text-[#D92039]" />
-                </div>
+              <div className="relative w-11 h-11 rounded-xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-300/80 dark:border-white/15 shadow-md shadow-black/10 dark:shadow-black/40 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-[#D92039]/40 shrink-0">
+                <img
+                  src={logoImg}
+                  alt="Cardinal Broadcasting Limited"
+                  className="w-full h-full object-contain rounded-[10px]"
+                />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
+                <span className="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-[#D92039] transition-colors">
                   CARDINAL
                 </span>
-                <span className="text-[10px] font-semibold tracking-widest text-slate-500 uppercase mt-0.5">
+                <span className="text-[10px] font-semibold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
                   Broadcasting Limited
                 </span>
               </div>

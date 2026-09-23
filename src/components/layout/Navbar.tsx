@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowUpRight, Radio } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { navLinks, companyDetails } from '../../data/company';
 import { Button } from '../ui/Button';
 import { ThemeToggle } from '../ui/ThemeToggle';
+import logoImg from '../../assets/cardinal-logo.jpeg';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,10 +46,12 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-3 group focus:outline-none"
             aria-label="Cardinal Broadcasting Limited Home"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9B111E] via-[#D92039] to-[#800A15] p-0.5 shadow-lg shadow-[#9B111E]/30 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-              <div className="w-full h-full bg-[#08090E] rounded-[10px] flex items-center justify-center">
-                <Radio className="w-5 h-5 text-[#D92039] transition-transform duration-300 group-hover:scale-110" />
-              </div>
+            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-200/80 dark:border-white/15 shadow-md shadow-black/10 dark:shadow-black/40 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-[#D92039]/40 shrink-0">
+              <img
+                src={logoImg}
+                alt="Cardinal Broadcasting Limited"
+                className="w-full h-full object-contain rounded-[10px]"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-[#D92039] transition-colors">
@@ -133,10 +136,12 @@ export const Navbar: React.FC = () => {
                 {/* Drawer Top Bar with Brand, Theme Toggle, and Close Button */}
                 <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-white/10">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#9B111E] to-[#D92039] p-0.5 flex items-center justify-center shadow-sm">
-                      <div className="w-full h-full bg-[#08090E] rounded-[6px] flex items-center justify-center">
-                        <Radio className="w-4 h-4 text-[#D92039]" />
-                      </div>
+                    <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-200 dark:border-white/15 shadow-xs flex items-center justify-center shrink-0">
+                      <img
+                        src={logoImg}
+                        alt="Cardinal Broadcasting Limited"
+                        className="w-full h-full object-contain rounded-[8px]"
+                      />
                     </div>
                     <div className="flex flex-col">
                       <span className="text-sm font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">

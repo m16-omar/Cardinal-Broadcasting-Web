@@ -1,13 +1,17 @@
 import React from 'react';
 import { Button } from '../components/ui/Button';
-import { Radio } from 'lucide-react';
+import logoImg from '../assets/cardinal-logo.jpeg';
 
 export const NotFoundPage: React.FC = () => {
   return (
     <div className="min-h-[70vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 text-center bg-slate-50 dark:bg-[#08090E] transition-colors duration-300">
       <div className="max-w-md mx-auto space-y-6">
-        <div className="w-16 h-16 rounded-2xl bg-[#9B111E]/10 border border-[#9B111E]/30 flex items-center justify-center text-[#D92039] mx-auto">
-          <Radio className="w-8 h-8" />
+        <div className="w-16 h-16 rounded-2xl overflow-hidden bg-[#08090E] p-1 border border-slate-200 dark:border-white/10 shadow-lg mx-auto flex items-center justify-center">
+          <img
+            src={logoImg}
+            alt="Cardinal Broadcasting Limited"
+            className="w-full h-full object-contain rounded-xl"
+          />
         </div>
 
         <div className="space-y-2">
