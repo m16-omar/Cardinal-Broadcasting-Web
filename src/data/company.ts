@@ -34,7 +34,7 @@ export const companyDetails = {
     careersEmail: 'careers@cardinalbroadcastingltd.com',
     pressEmail: 'press@cardinalbroadcastingltd.com',
     phone: '+234 (0) 1 234 5678',
-    address: 'Cardinal Broadcasting House, Lagos, Nigeria',
+    address: 'Plot 11 Lateef Jakande Rd, Agidingbi, Ikeja 101233, Lagos',
     officeHours: 'Monday – Friday: 8:00 AM – 6:00 PM (WAT)',
   },
   social: [
