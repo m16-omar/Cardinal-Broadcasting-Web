@@ -5,6 +5,7 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 import { PartnerMarquee } from '../components/ui/PartnerMarquee';
 import { ApproachSection } from '../sections/ApproachSection';
 import { TalentSection } from '../sections/TalentSection';
+import { LeadershipSection } from '../sections/LeadershipSection';
 import { FinalCta } from '../sections/FinalCta';
 import { Radio, Eye, Heart, Compass, ShieldCheck, Zap } from 'lucide-react';
 
@@ -160,6 +161,9 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Executive Leadership Section */}
+      <LeadershipSection />
 
       <ApproachSection />
       <TalentSection />
