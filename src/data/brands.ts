@@ -1,5 +1,6 @@
 import cityFmBuildingImg from '../assets/city1051fm building.png';
 import cmaImg from '../assets/CMA.jpeg';
+import areaFmStudioImg from '../assets/Area FM studio.jpg';
 
 export interface Brand {
   id: string;
@@ -49,7 +50,7 @@ export const brandsList: Brand[] = [
     ],
     websiteUrl: 'https://935areafm.com',
     ctaText: 'Visit Area FM',
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop',
+    imageUrl: areaFmStudioImg,
     accentColor: '#E65100',
   },
   {
