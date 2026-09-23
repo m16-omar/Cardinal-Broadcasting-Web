@@ -43,21 +43,21 @@ export const Navbar: React.FC = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-3 group focus:outline-none"
+            className="flex items-center gap-3.5 group focus:outline-none"
             aria-label="Cardinal Broadcasting Limited Home"
           >
-            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-200/80 dark:border-white/15 shadow-md shadow-black/10 dark:shadow-black/40 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-[#D92039]/40 shrink-0">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-200/90 dark:border-white/20 shadow-md shadow-black/15 dark:shadow-black/50 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-[#D92039]/50 shrink-0">
               <img
                 src={logoImg}
                 alt="Cardinal Broadcasting Limited"
-                className="w-full h-full object-contain rounded-[10px]"
+                className="w-full h-full object-contain rounded-[14px]"
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-[#D92039] transition-colors">
+              <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-[#D92039] transition-colors">
                 CARDINAL
               </span>
-              <span className="text-[10px] font-semibold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
+              <span className="text-[11px] sm:text-xs font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
                 Broadcasting Limited
               </span>
             </div>
@@ -135,19 +135,19 @@ export const Navbar: React.FC = () => {
               <div className="space-y-6">
                 {/* Drawer Top Bar with Brand, Theme Toggle, and Close Button */}
                 <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-white/10">
-                  <div className="flex items-center gap-2.5">
-                    <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-200 dark:border-white/15 shadow-xs flex items-center justify-center shrink-0">
+                  <div className="flex items-center gap-3">
+                    <div className="relative w-11 h-11 rounded-2xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-200 dark:border-white/15 shadow-sm flex items-center justify-center shrink-0">
                       <img
                         src={logoImg}
                         alt="Cardinal Broadcasting Limited"
-                        className="w-full h-full object-contain rounded-[8px]"
+                        className="w-full h-full object-contain rounded-xl"
                       />
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-sm font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
+                      <span className="text-base font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
                         CARDINAL
                       </span>
-                      <span className="text-[9px] font-semibold tracking-widest text-slate-500 uppercase">
+                      <span className="text-[10px] font-semibold tracking-widest text-slate-500 uppercase mt-0.5">
                         Menu
                       </span>
                     </div>

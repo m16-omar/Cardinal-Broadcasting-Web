@@ -42,8 +42,8 @@ export const FinalCta: React.FC = () => {
           <Button href="/contact" variant="primary" size="lg" icon="arrow-right">
             Partner With Us
           </Button>
-          <Button href="/contact" variant="secondary" size="lg">
-            Contact Cardinal
+          <Button href="/about" variant="secondary" size="lg">
+            About Us
           </Button>
         </motion.div>
       </div>

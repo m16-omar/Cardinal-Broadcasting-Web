@@ -39,7 +39,7 @@ export const AboutPage: React.FC = () => {
         title="About"
         highlightText="Cardinal Broadcasting"
         description="A dynamic Nigerian media organisation creating meaningful experiences through broadcasting, digital media, content, education, and community engagement."
-        breadcrumbs={[{ label: 'About' }]}
+        breadcrumbs={[{ label: 'About Us' }]}
       />
 
       {/* Main Corporate Positioning Section */}

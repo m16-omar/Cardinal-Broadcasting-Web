@@ -53,21 +53,21 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-6">
             <Link
               to="/"
-              className="flex items-center gap-3 group focus:outline-none inline-flex"
+              className="flex items-center gap-3.5 group focus:outline-none inline-flex"
               aria-label="Cardinal Broadcasting Limited Home"
             >
-              <div className="relative w-11 h-11 rounded-xl overflow-hidden bg-[#08090E] p-0.5 border border-slate-300/80 dark:border-white/15 shadow-md shadow-black/10 dark:shadow-black/40 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-[#D92039]/40 shrink-0">
+              <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden bg-[#08090E] p-1 border border-slate-300/90 dark:border-white/20 shadow-md shadow-black/15 dark:shadow-black/50 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-[#D92039]/50 shrink-0">
                 <img
                   src={logoImg}
                   alt="Cardinal Broadcasting Limited"
-                  className="w-full h-full object-contain rounded-[10px]"
+                  className="w-full h-full object-contain rounded-xl"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-[#D92039] transition-colors">
+                <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-[#D92039] transition-colors">
                   CARDINAL
                 </span>
-                <span className="text-[10px] font-semibold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
+                <span className="text-xs font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase mt-0.5">
                   Broadcasting Limited
                 </span>
               </div>
