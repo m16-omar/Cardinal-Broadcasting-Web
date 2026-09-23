@@ -35,7 +35,7 @@ export const companyDetails = {
     pressEmail: 'press@cardinalbroadcastingltd.com',
     phone: '+234 (0) 1 234 5678',
     address: 'Plot 11 Lateef Jakande Rd, Agidingbi, Ikeja 101233, Lagos',
-    officeHours: 'Monday – Friday: 8:00 AM – 6:00 PM (WAT)',
+    officeHours: 'Monday – Friday: 9:00 AM – 5:00 PM (WAT)',
   },
   social: [
     { name: 'LinkedIn', url: 'https://linkedin.com/company/cardinal-broadcasting', icon: 'Linkedin' },
